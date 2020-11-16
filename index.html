@@ -1,0 +1,135 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>graphql github dashboard</title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/52f2afaff9.js" crossorigin="anonymous"></script>
+    <!--end of font awesome  -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- responsive styles -->
+    <link rel="stylesheet" href="./responsiveStyles/desktop.css">
+    <link rel="stylesheet" href="./responsiveStyles/tablet.css">
+    <link rel="stylesheet" href="./responsiveStyles/mobile.css">
+    <!-- end of responsive styles -->
+
+  </head>
+  <body>
+    <!-- container -->
+    <div class="main-container">
+        <!-- nav bar -->
+        <nav class="nav-bar">
+          <div class="logo-container">
+            <i class="fab fa-github logo"></i>
+          </div>
+          <div class="search-input-container">
+            <input type="text" placeholder="Search or jump to...">
+          </div>
+          <div class="navigation">
+            <div class="nav-link">
+              <a href="#">Pull requests</a>
+            </div>
+            <div class="nav-link">
+              <a href="#">Issues</a>
+            </div>
+            <div class="nav-link">
+              <a href="#">MarketPlace</a>
+            </div>
+            <div class="nav-link">
+              <a href="#">Explore</a>
+            </div>
+          </div>
+          <div class="notifications-activies-user-avatar-container">
+            <div class="notification-icon-container">
+              <i class="far fa-bell"></i>
+
+            </div>
+            <div class="activities-icon-container">
+              <i class="fas fa-plus"></i>
+              <i class="fas fa-caret-down"></i>
+            </div>
+            <div class="user-avatar-options-container">
+              <img src="./assets/githubImage.jpg" style="width:30px;border-radius:50%" alt="user avatar">
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+          <!-- responsive burger  -->
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <!-- end of responsive burger -->
+        </nav>
+        <!-- end of nav bar -->
+        <!-- main view section -->
+        <section class="main-view">
+          <hr>
+          <div class="user-profile-container">
+            <div class="user-avatar-container-profile">
+              <img src="./assets/githubImage.jpg" alt="user avatar" style="border-radius: 50%;">
+              <div class="user-status-container"></div>
+            </div>
+            <div class="user-details-container">
+              <h1 class="user-name">Ifeanyi Okwuobi</h1>
+              <h2 class="username">chie7tain</h2>
+            </div>
+            <div class="user-statement-container">
+              <p class="user-statement-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, blanditiis inventore modi numquam voluptate
+                temporibus animi. Itaque voluptatibus quaerat doloremque libero animi, provident nam nemo accusamus? Ea qui alias
+                aliquam?
+              </p>
+            </div>
+            <div class="edit-profile-btn-container">
+              <button class="edit-profile-btn">Edit profile</button>
+            </div>
+            <div class="followers-following-stars-container">
+              <div class="followers-container">
+                <i class="fas fa-users"></i>
+                followers
+              </div>
+              <div class="dot">.</div>
+              <div class="following-container">
+                3 following
+              </div>
+              <div class="dot">.</div>
+              <div class="stars-container">
+                <i class="far fa-star"></i>
+                1
+              </div>
+            </div>
+            <div class="external-links-container">
+              <div class="website-link">
+                <i class="fas fa-link"></i>
+                <a href="https://chie7tain.netlify.app"target="_blank">https://chie7tain.netlify.app/</a>
+              </div>
+              <div class="social-links-container">
+                <a href="https://twitter.com/@ol7mpian" target="_blank">@ol7mpian</a>
+              </div>
+              <hr>
+              <div class="highlights-container">
+                <h3 class="highlights-container">
+                  <i class="fas fa-bahai"></i>
+                  Artic Code Vault Contributor
+                </h3>
+              </div>
+              <hr>
+              <div class="organizations-container">
+                <h3 class="organizations">Organizations</h3>
+                <img src="./assets/organizations-icon.jpg" style="width:40px;border-radius: 4px;" alt="icon of organization user belong to">
+              </div>
+            </div>
+          </div>
+          <!-- dashboard tabs container -->
+          <div class="dashboard-tabs-container">
+            <div class="tabs-container"></div>
+          </div>
+          <!-- end of dashboard container -->
+        </section>
+        <!-- end of main view section -->
+    </div>
+<!-- end of container -->
+    <script src="app.js"></script>
+  </body>
+</html>
