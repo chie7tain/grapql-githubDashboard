@@ -1,0 +1,37 @@
+/* default browser styles reset */
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+/* end of default styles reset */
+/* primary site colors and transformation */
+:root{
+  --primaryBlack:rgb(36,41,46);
+  --btnTextBlack:#24292E;
+  --repoNameBlue:#0366D6;
+  --repoDetailsBlack:#586069;
+  --userDescriptionBlack:#24292E;
+  --userNameBlack:#586069;
+  --primaryWhite:rgb(255,255,255);
+  --notificationBlue:linear-gradient(#54a3ff,#006eed);
+  --mainGreen:#2EA44F;
+  --mainGrey:#FAFBFC;
+  --mainTransition:all 0.2s ease-in;
+  --mainSpacing:0.1rem;
+  --borderRadius:4px;
+}
+/* end of primary site colors and transformation */
+html{
+  scroll-behavior: smooth;
+}
+body{
+    font-family: 'Public Sans', sans-serif;
+}
+/* styles for main container */
+.main-container{
+  width:1366px;
+  margin:0 auto;
+  max-width:100%;
+  overflow-x: hidden;
+}

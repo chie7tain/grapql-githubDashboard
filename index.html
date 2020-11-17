@@ -6,6 +6,9 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/52f2afaff9.js" crossorigin="anonymous"></script>
     <!--end of font awesome  -->
+      <!-- google font -->
+      <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+      <!-- styles sheet -->
     <link rel="stylesheet" href="styles.css">
     <!-- responsive styles -->
     <link rel="stylesheet" href="./responsiveStyles/desktop.css">
@@ -17,15 +20,28 @@
   <body>
     <!-- container -->
     <div class="main-container">
-        <!-- nav bar -->
-        <nav class="nav-bar">
+      <!-- nav bar -->
+      <nav class="nav-bar">
+        <!-- responsive burger  -->
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <!-- end of responsive burger -->
           <div class="logo-container">
             <i class="fab fa-github logo"></i>
           </div>
-          <div class="search-input-container">
-            <input type="text" placeholder="Search or jump to...">
-          </div>
           <div class="navigation">
+            <div class="search-input-container">
+              <input type="text" placeholder="Search or jump to..." class="search-input">
+              <div class="info-container">
+                <i class="info">i</i>
+              </div>
+            </div>
+            <div class="nav-link top-nav-link">
+              <a href="#">Dashboard</a>
+            </div>
             <div class="nav-link">
               <a href="#">Pull requests</a>
             </div>
@@ -38,11 +54,20 @@
             <div class="nav-link">
               <a href="#">Explore</a>
             </div>
+            <div class="nav-link username-link">
+              <a href="#">
+                <img src="./assets/githubImage.jpg" alt="avatar of user" style="width:20px;border-radius:50px">
+                <span class="username">chie7tain</span>
+              </a>
+            </div>
+            <div class="nav-link bottom-nav-link">
+              <a href="#"><i class="fas fa-sign-out-alt"></i> Sign out</a>
+            </div>
           </div>
           <div class="notifications-activies-user-avatar-container">
             <div class="notification-icon-container">
               <i class="far fa-bell"></i>
-
+              <div class="notification-dot"></div>
             </div>
             <div class="activities-icon-container">
               <i class="fas fa-plus"></i>
@@ -53,18 +78,32 @@
               <i class="fas fa-caret-down"></i>
             </div>
           </div>
-          <!-- responsive burger  -->
-          <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-          </div>
-          <!-- end of responsive burger -->
         </nav>
         <!-- end of nav bar -->
         <!-- main view section -->
         <section class="main-view">
-          <hr>
+          <!-- overview repositories projects packages tab navigation bar -->
+          <div class="dashboard-tabs-container">
+            <div class="tabs-container">
+              <div class="Overview">
+                <i class="fas fa-book-open"></i>
+                Overview
+              </div>
+              <div class="repositories">
+                <i class="fas fa-book"></i>
+                Repositories
+              </div>
+              <div class="projects">
+                <i class="fas fa-th-list"></i>
+                Projects
+              </div>
+              <div class="package">
+                <i class="fas fa-cubes"></i>
+                Package
+              </div>
+            </div>
+          </div>
+          <!-- end of  overview navigation tab bar-->
           <div class="user-profile-container">
             <div class="user-avatar-container-profile">
               <img src="./assets/githubImage.jpg" alt="user avatar" style="border-radius: 50%;">
@@ -122,12 +161,83 @@
             </div>
           </div>
           <!-- dashboard tabs container -->
-          <div class="dashboard-tabs-container">
-            <div class="tabs-container"></div>
+          <div class="tabs-content-view">
+            <div class="input-type-language-new-repo-container">
+              <div class="find-repo-container-input">
+                <input type="text">
+              </div>
+              <div class="type-details-container">
+                <button class="type-btn">Type:All
+                  <i class="fas fa-caret-down"></i>
+                </button>
+              </div>
+              <div class="select-language-container">
+                <button class="select-language-btn">Language:All
+                  <i class="fas fa-caret-down"></i>
+                </button>
+              </div>
+              <div class="new-repo-btn-container">
+                <button class="new-repo-btn"><i class="fas fa-book"></i>New</button>
+              </div>
+            </div>
+            <!-- individual repo details container -->
+            <div class="individual-repo-details-container">
+              <div class="repo-name-language-time-stamp-container">
+                <h3 class="repo-name">porfolio</h3>
+                <div class="language-used-license-applied-time-stamp-container">
+                  <div class="language-used">
+                    <i class="far fa-circle"></i>CSS
+                  </div>
+                  <div class="license-applied"><i class="fas fa-balance-scale"></i>MIT License</div>
+                  <div class="time-stamp">Updated <span class="time-amount">3</span><span class="time-duration">hours</span>ago</div>
+                </div>
+              </div>
+              <!-- ====== -->
+              <div class="repo-stars-btn-container">
+                <button class="repo-stars"><i class="far fa-star"></i>Star</button>
+              </div>
+            </div>
+            <!-- end of individual repo detail -->
+            <hr>
           </div>
-          <!-- end of dashboard container -->
+          <!-- end of dashboard tabs container -->
         </section>
         <!-- end of main view section -->
+        <!-- repo list page btn -->
+        <div class="repo-list-page-btn-container">
+          <div class="previous-btn-container">
+            <button class="previous-btn">Previous</button>
+          </div>
+          <div class="next-btn-container">
+            <button class="next-btn">Next</button>
+          </div>
+        </div>
+        <!-- end of repo list page btn -->
+        <hr>
+        <!-- footer  -->
+        <section class="footer">
+          <div class="footer-logo-container">
+            <i class="fab fa-github logo"></i>
+          </div>
+          <div class="copyright-container">
+            <span class="copy">&COPY;</span>2020 GitHub, Inc.
+          </div>
+          <div class="important-links-container">
+            <div class="important-link">Terms</div>
+            <div class="important-link">Privacy</div>
+            <div class="important-link">Security</div>
+            <div class="important-link">Status</div>
+            <div class="important-link">Help</div>
+            <div class="important-link">Contact GitHub</div>
+            <div class="important-link">Pricing</div>
+            <div class="important-link">API</div>
+            <div class="important-link">Training</div>
+            <div class="important-link">Blog</div>
+            <div class="important-link">About</div>
+            <div class="important-link"></div>
+          </div>
+        </section>
+        <!-- end of footer -->
     </div>
 <!-- end of container -->
     <script src="app.js"></script>

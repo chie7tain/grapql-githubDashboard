@@ -1,0 +1,168 @@
+ @import url('https://fonts.googleapis.com/css?family=Bad+Script|Merienda&display=swap');
+/* primary site colors and transformation */
+:root{
+  --primaryBlack:rgb(36,41,46);
+  --btnTextBlack:#24292E;
+  --repoNameBlue:#0366D6;
+  --repoDetailsBlack:#586069;
+  --userDescriptionBlack:#24292E;
+  --userNameBlack:#586069;
+  --primaryWhite:rgb(255,255,255);
+  --notificationBlue:linear-gradient(#54a3ff,#006eed);
+  --mainGreen:#2EA44F;
+  --mainGrey:#FAFBFC;
+  --mainTransition:all 0.5s ease-out;
+  --mainSpacing:0.1rem;
+  --borderRadius:4px;
+}
+/* end of primary site colors and transformation */
+@media only screen and (max-width:400px){
+  /* styles for nav bar */
+  .nav-bar{
+    display:flex;
+    background:var(--primaryBlack);
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+        .burger{
+         width:40px;
+         height:40px;
+         margin:10px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items:center;
+         cursor:pointer;
+
+       }
+       .line1,.line2,.line3{
+         background:var(--primaryWhite);
+         width:25px;
+         height:3px;
+         margin:3px;
+         transition:var(--mainTransition);
+       }
+         .toggle .line1{
+         transform:rotate(-45deg) translate(-5px,6px);
+       }
+       .toggle .line2{
+         opacity:0;
+       }
+       .toggle .line3{
+         transform:rotate(45deg) translate(-5px,-6px);
+       }
+       .logo-container{
+         margin:auto;
+       }
+  .logo{
+    color:var(--primaryWhite);
+    font-size: 1.9em;
+  }
+  .user-avatar-options-container ,.activities-icon-container{
+    display:none;
+  }
+  .notifications-activies-user-avatar-container{
+    display:flex;
+    align-items: center;
+    /* width:50px; */
+    margin-right:20px;
+  }
+  .notification-icon-container{
+    position: relative;
+  }
+  .fa-bell{
+    color:var(--primaryWhite);
+  }
+
+  .notification-dot{
+    width:7px;
+    height: 7px;
+    border-radius:50px;
+    background:var(--notificationBlue);
+    position: absolute;
+    top:-2.5px;
+    right:1px;
+  }
+  .search-input-container{
+    width:100%;
+    margin:10px;
+    /* border: 1px solid; */
+  }
+  .search-input{
+    width:90%;
+    background:none;
+    position: relative;
+    border:1px solid var(--repoDetailsBlack);
+    padding:.4em;
+    color:var(--primaryWhite);
+    border-radius: var(--borderRadius);
+  }
+  .info-container{
+    border:1px solid var(--repoDetailsBlack);
+    width:18px;
+    height:18px;
+    border-radius: 4px;
+    position: absolute;
+    right:33px;
+    top:15px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    cursor: pointer;
+  }
+  .info{
+    color:var(--repoDetailsBlack);
+    font-family: "Bad script";
+    font-weight: 700;
+  }
+  .navigation{
+    position:absolute;
+    top:50px;
+    background:var(--primaryBlack);
+    width:100%;
+    display: flex;
+    flex-direction:column;
+    transform: translateY(-150%);
+    transition: var(--mainTransition);
+    z-index:1;
+  }
+  .nav-active{
+    transform:translateY(0%);
+    }
+  .navigation .nav-link{
+    padding:.5em;
+    margin:0 10px;
+    margin-bottom:7px;
+    border-bottom:1px solid var(--repoDetailsBlack);
+    width:90%;
+    opacity:0;
+  }
+  .top-nav-link{
+    margin-top:10px !important;
+     border-top:1px solid var(--repoDetailsBlack);
+  }
+  .bottom-nav-link{
+    margin-bottom:15px !important;
+    border-bottom:none !important;
+  }
+  .nav-link a{
+    color:var(--primaryWhite);
+    text-decoration:none;
+  }
+  /* this animates the nav links as the enter the frame when the burger is clicked */
+  @keyframes navLinkFade{
+    from {
+      opacity: 0;
+      transform: translateX(50%);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  /* end of styles for nav bar */
+}
