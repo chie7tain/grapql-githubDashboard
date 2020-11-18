@@ -16,7 +16,6 @@ function animateLinks(links){
 }
 // this function helps to close the nav after the user clicks on any nav link
 function toggleNavFromLink(navLinks){
-  const mainContainer = document.querySelector(".main-container");
   navLinks.forEach(link =>{
     link.addEventListener("click",()=>{
       navigation.classList.toggle("nav-active");

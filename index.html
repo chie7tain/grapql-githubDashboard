@@ -32,38 +32,7 @@
           <div class="logo-container">
             <i class="fab fa-github logo"></i>
           </div>
-          <div class="navigation">
-            <div class="search-input-container">
-              <input type="text" placeholder="Search or jump to..." class="search-input">
-              <div class="info-container">
-                <i class="info">i</i>
-              </div>
-            </div>
-            <div class="nav-link top-nav-link">
-              <a href="#">Dashboard</a>
-            </div>
-            <div class="nav-link">
-              <a href="#">Pull requests</a>
-            </div>
-            <div class="nav-link">
-              <a href="#">Issues</a>
-            </div>
-            <div class="nav-link">
-              <a href="#">MarketPlace</a>
-            </div>
-            <div class="nav-link">
-              <a href="#">Explore</a>
-            </div>
-            <div class="nav-link username-link">
-              <a href="#">
-                <img src="./assets/githubImage.jpg" alt="avatar of user" style="width:20px;border-radius:50px">
-                <span class="username">chie7tain</span>
-              </a>
-            </div>
-            <div class="nav-link bottom-nav-link">
-              <a href="#"><i class="fas fa-sign-out-alt"></i> Sign out</a>
-            </div>
-          </div>
+
           <div class="notifications-activies-user-avatar-container">
             <div class="notification-icon-container">
               <i class="far fa-bell"></i>
@@ -79,25 +48,57 @@
             </div>
           </div>
         </nav>
+        <div class="navigation">
+          <div class="search-input-container">
+            <input type="text" placeholder="Search or jump to..." class="search-input">
+            <div class="info-container">
+              <i class="info">i</i>
+            </div>
+          </div>
+          <div class="nav-link top-nav-link">
+            <a href="#">Dashboard</a>
+          </div>
+          <div class="nav-link">
+            <a href="#">Pull requests</a>
+          </div>
+          <div class="nav-link">
+            <a href="#">Issues</a>
+          </div>
+          <div class="nav-link">
+            <a href="#">MarketPlace</a>
+          </div>
+          <div class="nav-link">
+            <a href="#">Explore</a>
+          </div>
+          <div class="nav-link  ">
+            <a href="#" class="username-link">
+              <img src="./assets/githubImage.jpg" alt="avatar of user" style="width:20px;border-radius:50px" class="check">
+              <div class="username-nav">chie7tain</div>
+            </a>
+          </div>
+          <div class="nav-link bottom-nav-link">
+            <a href="#"><i class="fas fa-sign-out-alt"></i> Sign out</a>
+          </div>
+        </div>
         <!-- end of nav bar -->
         <!-- main view section -->
         <section class="main-view">
           <!-- overview repositories projects packages tab navigation bar -->
           <div class="dashboard-tabs-container">
             <div class="tabs-container">
-              <div class="Overview">
+              <div class="Overview tabs">
                 <i class="fas fa-book-open"></i>
                 Overview
               </div>
-              <div class="repositories">
+              <div class="repositories tabs">
                 <i class="fas fa-book"></i>
-                Repositories
+                Repositories  <span class="repo-count">50</span>
               </div>
-              <div class="projects">
+              <div class="projects tabs">
                 <i class="fas fa-th-list"></i>
                 Projects
               </div>
-              <div class="package">
+              <div class="package tabs">
                 <i class="fas fa-cubes"></i>
                 Package
               </div>
@@ -106,18 +107,21 @@
           <!-- end of  overview navigation tab bar-->
           <div class="user-profile-container">
             <div class="user-avatar-container-profile">
-              <img src="./assets/githubImage.jpg" alt="user avatar" style="border-radius: 50%;">
-              <div class="user-status-container"></div>
+              <img src="./assets/githubImage.jpg" alt="user avatar" class="user-avatar">
             </div>
+                <div class="user-status-container">
+                  <span class="bullseye-container">
+                    <i class="fas fa-bullseye"></i> <div class="focus-dot"></div>
+                  </span>
+                  <span class="status-text">Focusing</span>
+                </div>
             <div class="user-details-container">
-              <h1 class="user-name">Ifeanyi Okwuobi</h1>
+              <h1 class="profile-name">Ifeanyi Okwuobi</h1>
               <h2 class="username">chie7tain</h2>
             </div>
             <div class="user-statement-container">
               <p class="user-statement-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, blanditiis inventore modi numquam voluptate
-                temporibus animi. Itaque voluptatibus quaerat doloremque libero animi, provident nam nemo accusamus? Ea qui alias
-                aliquam?
+                Be true to yourself. Be brave to take the steps needed to succeed and improve your craft, be loyal to learning and growth.
               </p>
             </div>
             <div class="edit-profile-btn-container">
@@ -146,14 +150,14 @@
               <div class="social-links-container">
                 <a href="https://twitter.com/@ol7mpian" target="_blank">@ol7mpian</a>
               </div>
-              <hr>
+              <hr class="line-btn-website-link-followers">
               <div class="highlights-container">
-                <h3 class="highlights-container">
+                <h3 class="highlights-text">
                   <i class="fas fa-bahai"></i>
                   Artic Code Vault Contributor
                 </h3>
               </div>
-              <hr>
+              <hr class="line-btn-website-link-followers">
               <div class="organizations-container">
                 <h3 class="organizations">Organizations</h3>
                 <img src="./assets/organizations-icon.jpg" style="width:40px;border-radius: 4px;" alt="icon of organization user belong to">
