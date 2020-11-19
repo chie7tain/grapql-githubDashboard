@@ -16,8 +16,10 @@
   --primaryWhite:rgb(255,255,255);
   --notificationBlue:linear-gradient(#54a3ff,#006eed);
   --btnBorderBlack:rgb(204, 193, 193);
+  --repoCountBlack:#D1D5DA80;
   --mainGreen:#2EA44F;
   --mainGrey:#FAFBFC;
+  --mainOrange:#f36440;
   --mainTransition:all 0.2s ease-in;
   --mainSpacing:0.1rem;
   --borderRadius:4px;

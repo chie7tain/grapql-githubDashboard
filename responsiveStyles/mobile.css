@@ -10,12 +10,13 @@
   --primaryWhite:rgb(255,255,255);
   --notificationBlue:linear-gradient(#54a3ff,#006eed);
   --btnBorderBlack:rgb(204, 193, 193);
+    --repoCountBlack:#D1D5DA80;
   --mainGreen:#2EA44F;
   --mainGrey:#FAFBFC;
   --mainTransition:all 0.5s ease-out;
   --mainSpacing:0.1rem;
   --borderRadius:4px;
-  --mainOrange:#e34c26;
+  --mainOrange:#f36440;
 }
 /* end of primary site colors and transformation */
 @media only screen and (max-width:400px){
@@ -343,9 +344,43 @@
     font-size:.8em;
     justify-content:space-around;
     margin:10px auto;
+    border-bottom: 1px solid var(--btnBorderBlack);
+  }
+  .tabs-icons{
+    display:none;
+  }
+  .repositories{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .repo-count{
+    background: var(--repoCountBlack);
+    border-radius: 10px;
+    display:inline;
+    width:28px;
+    height:25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left:10px;
   }
   .tabs{
-    border-bottom:var(--)
+    color:var(--userDescriptionBlack);
+    padding:.6em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: var(--mainTransition);
+  }
+  .tabs:active{
+  }
+  .tabbing-style{
+    border-bottom:2px solid var(--mainOrange);
+    color:var(--userDescriptionBlack);
+    font-size:1em;
   }
   /* end of styles for tabs */
   /* end of styles for dashboard tabs container */
@@ -353,6 +388,123 @@
   /* styles for tabs content view container */
   .tabs-content-view{
     grid-area:repos;
+  }
+  .input-type-language-new-repo-container{
+    display:grid;
+    /* width:100%; */
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "inputContainer inputContainer inputContainer"
+      "typeContainer typeContainer newRepoContainer" ;
+    /* border:1px solid; */
+  }
+  .find-repo-container-input{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    grid-area:inputContainer;
+    /* border:1px solid; */
+  }
+  .find-repo-input{
+    padding:.6em;
+    border-radius: var(--borderRadius);
+    width:95%;
+    border:1px solid var(--btnBorderBlack);
+  }
+  .type-language-container{
+    grid-area:typeContainer;
+    display:flex;
+    margin-left:10px;
+  }
+  .type-details-container{
+    /* grid-area:typeContainer; */
+  }
+  .type-btn{
+    background:var(--mainGrey);
+    padding:.5em .9em;
+    border:1px solid var(--btnBorderBlack);
+    border-radius:var(--borderRadius);
+    color:var(--userNameBlack);
+    margin-right:6px;
+  }
+  .select-language-container{
+    /* grid-area:languageContainer ; */
+  }
+  .select-language-btn{
+    background:var(--mainGrey);
+    padding:.5em 1em;
+    border:1px solid var(--btnBorderBlack);
+    border-radius: var(--borderRadius);
+    color:var(--userNameBlack);
+  }
+  .all-text{
+    color:var(--userDescriptionBlack);
+  }
+  .new-repo-btn-container{
+    grid-area:newRepoContainer;
+    display: flex;
+    justify-content: flex-end;
+    margin-right:10px;
+  }
+  .new-repo-btn{
+    background: var(--mainGreen);
+    border:none;
+    padding:.5em .9em;
+    color:var(--primaryWhite);
+    border-radius: var(--borderRadius);
+  }
+  .individual-repo-details-container{
+    display:flex;
+    justify-content: space-between;
+    margin:10px;
+    border-top:1px solid var(--repoDetailsBlack);
+    border-bottom:1px solid var(--repoDetailsBlack);
+  }
+  .repo-name-language-time-stamp-container{
+    display:flex;
+    flex-direction:column;
+    margin-bottom: 20px;
+  }
+  .repo-name{
+    color:var(--repoNameBlue);
+    font-size: 1em;
+    margin-top:20px;
+    margin-bottom: 10px;
+  }
+  .language-used-license-applied-time-stamp-container{
+    display: flex;
+  }
+  .language-used{
+    font-size:.7em;
+    color:var(--repoDetailsBlack);
+    margin-right: 10px;
+  }
+  .license-applied{
+    font-size:.7em;
+    color:var(--repoDetailsBlack);
+    margin-right:10px;
+  }
+  .time-stamp{
+    font-size:.7em;
+    color:var(--repoDetailsBlack);
+  }
+  .repo-stars-btn-container{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width:30%;
+    /* border:1px solid; */
+  }
+  .repo-stars{
+    background: var(--mainGrey);
+    border:1px solid var(--btnBorderBlack);
+    padding:.3em .6em;
+    border-radius: var(--borderRadius);
+    color:var(--btnTextBlack);
+    font-size: .7em;
   }
   /* end of styles for tabs content view container */
   /* ========================= */

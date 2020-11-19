@@ -87,20 +87,28 @@
           <div class="dashboard-tabs-container">
             <div class="tabs-container">
               <div class="Overview tabs">
-                <i class="fas fa-book-open"></i>
-                Overview
+                <!-- <a href="#overview"> -->
+                  <i class="fas fa-book-open tabs-icons"></i>
+                  Overview
+                <!-- </a> -->
               </div>
               <div class="repositories tabs">
-                <i class="fas fa-book"></i>
-                Repositories  <span class="repo-count">50</span>
+                <!-- <a href="#repositories"> -->
+                  <i class="fas fa-book tabs-icons"></i>
+                  Repositories  <span class="repo-count">50</span>
+                <!-- </a> -->
               </div>
               <div class="projects tabs">
-                <i class="fas fa-th-list"></i>
-                Projects
+                <!-- <a href="#projects"> -->
+                  <i class="fas fa-th-list tabs-icons"></i>
+                  Projects
+                <!-- </a> -->
               </div>
               <div class="package tabs">
-                <i class="fas fa-cubes"></i>
-                Package
+                <!-- <a href="#package"> -->
+                  <i class="fas fa-cubes tabs-icons"></i>
+                  Packages
+                <!-- </a> -->
               </div>
             </div>
           </div>
@@ -168,20 +176,22 @@
           <div class="tabs-content-view">
             <div class="input-type-language-new-repo-container">
               <div class="find-repo-container-input">
-                <input type="text">
+                <input type="text" placeholder="Find a repository..." class="find-repo-input">
               </div>
-              <div class="type-details-container">
-                <button class="type-btn">Type:All
-                  <i class="fas fa-caret-down"></i>
-                </button>
-              </div>
-              <div class="select-language-container">
-                <button class="select-language-btn">Language:All
-                  <i class="fas fa-caret-down"></i>
-                </button>
+              <div class="type-language-container">
+                <div class="type-details-container">
+                  <button class="type-btn">Type:<span class="all-text"> All</span>
+                    <i class="fas fa-caret-down all-text"></i>
+                  </button>
+                </div>
+                <div class="select-language-container">
+                  <button class="select-language-btn">Language:<span class="all-text"> All</span>
+                    <i class="fas fa-caret-down all-text"></i>
+                  </button>
+                </div>
               </div>
               <div class="new-repo-btn-container">
-                <button class="new-repo-btn"><i class="fas fa-book"></i>New</button>
+                <button class="new-repo-btn"><i class="fas fa-book"></i> New</button>
               </div>
             </div>
             <!-- individual repo details container -->
@@ -192,17 +202,16 @@
                   <div class="language-used">
                     <i class="far fa-circle"></i>CSS
                   </div>
-                  <div class="license-applied"><i class="fas fa-balance-scale"></i>MIT License</div>
-                  <div class="time-stamp">Updated <span class="time-amount">3</span><span class="time-duration">hours</span>ago</div>
+                  <div class="license-applied"><i class="fas fa-balance-scale"></i> MIT License</div>
+                  <div class="time-stamp">Updated <span class="time-amount">3</span><span class="time-duration"> hours </span>ago</div>
                 </div>
               </div>
               <!-- ====== -->
               <div class="repo-stars-btn-container">
-                <button class="repo-stars"><i class="far fa-star"></i>Star</button>
+                <button class="repo-stars"><i class="far fa-star"></i> Star</button>
               </div>
             </div>
             <!-- end of individual repo detail -->
-            <hr>
           </div>
           <!-- end of dashboard tabs container -->
         </section>

@@ -36,3 +36,11 @@ const navSlide = ()=>{
 }
 navSlide();
 // end of responsive script
+
+// this line of code add an orange border bottom color to the tabs when clicked by the user
+const [...tabs] = document.querySelectorAll(".tabs");//we use the rest parameter ... to convert the tabs nodelist to an array of tabs
+// tabs.forEach(tab =>{
+//   tab.addEventListener("click",(e)=>{
+
+//   })
+// })
