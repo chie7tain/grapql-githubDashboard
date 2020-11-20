@@ -4,6 +4,14 @@
   padding:0px;
   box-sizing: border-box;
 }
+/* element {
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+} */
 /* end of default styles reset */
 /* primary site colors and transformation */
 :root{
@@ -29,7 +37,8 @@ html{
   scroll-behavior: smooth;
 }
 body{
-    font-family: 'Public Sans', sans-serif;
+    /* font-family: 'Public Sans', sans-serif; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x:hidden;
 }
 /* styles for main container */

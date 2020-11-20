@@ -43,7 +43,7 @@ window.onscroll = function (){
   stickyNav()
 };
 // this is the tabs navigation bar
-let tabsNav = document.querySelector(".tabs-navigation-bar");
+let tabsNav = document.querySelector(".tabs-container");
 console.log(tabsNav);
 // this line gets the position of the tabsNav
 let sticky = tabsNav.offsetTop;

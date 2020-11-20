@@ -11,6 +11,7 @@
     <!-- end of icons from github -->
       <!-- google font -->
       <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="./assets/Segoe UI.ttf">
       <!-- styles sheet -->
     <link rel="stylesheet" href="styles.css">
     <!-- responsive styles -->
@@ -76,11 +77,11 @@
               <div class="notification-dot"></div>
             </div>
             <div class="activities-icon-container">
-              <i class="fas fa-plus"></i>
+              <span class="iconify plus" data-icon="octicon:plus-24" data-inline="false"></span>
               <i class="fas fa-caret-down"></i>
             </div>
             <div class="user-avatar-options-container">
-              <img src="./assets/githubImage.jpg" style="width:30px;border-radius:50%" alt="user avatar">
+              <img src="./assets/githubImage.jpg" style="border-radius:50%" alt="user avatar" class="user-avatar-tablet-nav">
               <i class="fas fa-caret-down"></i>
             </div>
           </div>
@@ -93,30 +94,26 @@
         <section class="main-view">
           <!-- overview repositories projects packages tab navigation bar -->
           <div class="tabs-navigation-bar">
+            <div class="tabs-user-avatar-container">
+              <img src="./assets/githubImage.jpg" alt="user avatar" class="user-avatar-tabs">
+              <span class="user-name-tabs">chie7tain</span>
+            </div>
             <div class="tabs-container">
               <div class="Overview tabs">
-                <!-- <a href="#overview"> -->
                   <span class="iconify tabs-icons" data-icon="octicon:book-16" data-inline="false"></span>
                   Overview
-                <!-- </a> -->
               </div>
               <div class="repositories tabs">
-                <!-- <a href="#repositories"> -->
                   <span class="iconify tabs-icons" data-icon="octicon:repo-16" data-inline="false"></span>
                   Repositories  <span class="repo-count">50</span>
-                <!-- </a> -->
               </div>
               <div class="projects tabs">
-                <!-- <a href="#projects"> -->
                   <span class="iconify tabs-icons" data-icon="octicon:project-16" data-inline="false"></span>
                   Projects
-                <!-- </a> -->
               </div>
               <div class="package tabs">
-                <!-- <a href="#package"> -->
                   <span class="iconify tabs-icons" data-icon="octicon:package-16" data-inline="false"></span>
                   Packages
-                <!-- </a> -->
               </div>
             </div>
           </div>
