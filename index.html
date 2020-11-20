@@ -23,6 +23,7 @@
   <body>
     <!-- container -->
     <div class="main-container">
+      <div class="nav-container"></div>
       <!-- nav bar -->
       <nav class="nav-bar">
         <!-- responsive burger  -->
@@ -33,10 +34,42 @@
         </div>
         <!-- end of responsive burger -->
           <div class="logo-container">
-            <!-- <i class="fab fa-github logo"></i> -->
             <span class="iconify logo" data-icon="octicon:mark-github-16" data-inline="false"></span>
           </div>
-
+<!-- navigation -->
+<div class="navigation">
+  <div class="search-input-container">
+    <input type="text" placeholder="Search or jump to..." class="search-input">
+    <div class="info-container">
+      <i class="info">i</i>
+    </div>
+  </div>
+  <div class="nav-link top-nav-link">
+    <a href="#">Dashboard</a>
+  </div>
+  <div class="nav-link">
+    <a href="#">Pull requests</a>
+  </div>
+  <div class="nav-link">
+    <a href="#">Issues</a>
+  </div>
+  <div class="nav-link">
+    <a href="#">MarketPlace</a>
+  </div>
+  <div class="nav-link">
+    <a href="#">Explore</a>
+  </div>
+  <div class="nav-link link-username ">
+    <a href="#" class="username-link">
+      <img src="./assets/githubImage.jpg" alt="avatar of user" style="width:20px;border-radius:50px" class="check">
+      <div class="username-nav">chie7tain</div>
+    </a>
+  </div>
+  <div class="nav-link bottom-nav-link">
+    <a href="#"><i class="fas fa-sign-out-alt"></i> Sign out</a>
+  </div>
+</div>
+<!-- end of navigation -->
           <div class="notifications-activies-user-avatar-container">
             <div class="notification-icon-container">
               <span class="iconify bell" data-icon="octicon:bell-16" data-inline="false"></span>
@@ -51,39 +84,10 @@
               <i class="fas fa-caret-down"></i>
             </div>
           </div>
+
         </nav>
-        <div class="navigation">
-          <div class="search-input-container">
-            <input type="text" placeholder="Search or jump to..." class="search-input">
-            <div class="info-container">
-              <i class="info">i</i>
-            </div>
-          </div>
-          <div class="nav-link top-nav-link">
-            <a href="#">Dashboard</a>
-          </div>
-          <div class="nav-link">
-            <a href="#">Pull requests</a>
-          </div>
-          <div class="nav-link">
-            <a href="#">Issues</a>
-          </div>
-          <div class="nav-link">
-            <a href="#">MarketPlace</a>
-          </div>
-          <div class="nav-link">
-            <a href="#">Explore</a>
-          </div>
-          <div class="nav-link  ">
-            <a href="#" class="username-link">
-              <img src="./assets/githubImage.jpg" alt="avatar of user" style="width:20px;border-radius:50px" class="check">
-              <div class="username-nav">chie7tain</div>
-            </a>
-          </div>
-          <div class="nav-link bottom-nav-link">
-            <a href="#"><i class="fas fa-sign-out-alt"></i> Sign out</a>
-          </div>
-        </div>
+
+
         <!-- end of nav bar -->
         <!-- main view section -->
         <section class="main-view">

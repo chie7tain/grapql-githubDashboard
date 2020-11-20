@@ -1,59 +1,5 @@
  @import url('https://fonts.googleapis.com/css?family=Bad+Script|Merienda&display=swap');
-/* primary site colors and transformation */
-:root{
-  --primaryBlack:rgb(36,41,46);
-  --btnTextBlack:#24292E;
-  --repoNameBlue:#0366D6;
-  --repoDetailsBlack:#586069;
-  --userDescriptionBlack:#24292E;
-  --userNameBlack:#586069;
-  --primaryWhite:rgb(255,255,255);
-  --notificationBlue:linear-gradient(#54a3ff,#006eed);
-  --btnBorderBlack:rgb(204, 193, 193);
-    --repoCountBlack:#D1D5DA80;
-  --mainGreen:#2EA44F;
-  --mainGrey:#FAFBFC;
-  --mainTransition:all 0.5s ease-out;
-  --mainSpacing:0.1rem;
-  --borderRadius:4px;
-  --mainOrange:#f36440;
-}
-/* end of primary site colors and transformation */
- @media only screen and(width:320px){
-        /* .type-btn{
-      background:var(--mainGrey);
-      border:1px solid var(--btnBorderBlack);
-      border-radius:var(--borderRadius);
-      color:var(--userNameBlack);
-      margin-right:6px;
-    }
-    .select-language-container{
-      grid-area:languageContainer ;
-    }
-    .select-language-btn{
-      background:var(--mainGrey);
-      padding:.5em 1em;
-      border:1px solid var(--btnBorderBlack);
-      border-radius: var(--borderRadius);
-      color:var(--userNameBlack);
-    }
-    .all-text{
-      color:var(--userDescriptionBlack);
-    }
-    .new-repo-btn-container{
-      grid-area:newRepoContainer;
-      display: flex;
-      justify-content: flex-end;
-      margin-right:10px;
-    }
-    .new-repo-btn{
-      background: var(--mainGreen);
-      border:none;
-      padding:.5em .9em;
-      color:var(--primaryWhite);
-      border-radius: var(--borderRadius);
-    } */
-  }
+
 @media only screen and (max-width:400px){
   /* =============== */
 
@@ -62,24 +8,24 @@
     display:flex;
     background:var(--primaryBlack);
     height: 50px;
-    justify-content: space-around;
+    /* justify-content: space-evenly; */
     align-items: center;
     position: relative;
     /* top:0px; */
     z-index: 3;
     width:100%;
   }
-        .burger{
-         width:40px;
-         height:40px;
-         margin:10px;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items:center;
-         cursor:pointer;
+  .burger{
+    width:40px;
+    height:40px;
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    cursor:pointer;
 
-       }
+  }
        .line1,.line2,.line3{
          background:var(--primaryWhite);
          width:19px;
@@ -97,7 +43,11 @@
          transform:rotate(45deg) translate(-5px,-3px);
        }
        .logo-container{
-         margin:auto;
+         margin:0 auto;
+         display: flex;
+         justify-content: center;
+         /* border:1px solid red; */
+         width:80%;
        }
   .logo{
     color:var(--primaryWhite);
@@ -109,7 +59,8 @@
   .notifications-activies-user-avatar-container{
     display:flex;
     align-items: center;
-    /* width:50px; */
+    justify-content: flex-end;
+    width:40px;
     margin-right:20px;
   }
   .notification-icon-container{
@@ -163,7 +114,7 @@
   }
   .navigation{
     position:absolute;
-    top:50px;
+    top:40px;
     background:var(--primaryBlack);
     width:100%;
     display: flex;
@@ -675,13 +626,13 @@
         .burger{
          width:40px;
          height:40px;
-         margin:10px;
+         /* margin:10px; */
          display: flex;
          flex-direction: column;
          justify-content: center;
          align-items:center;
          cursor:pointer;
-
+          /* border:1px solid white; */
        }
        .line1,.line2,.line3{
          background:var(--primaryWhite);
@@ -700,7 +651,11 @@
          transform:rotate(45deg) translate(-5px,-3px);
        }
        .logo-container{
-         margin:auto;
+         margin:0 auto;
+         /* border:1px solid red; */
+         width:100%;
+         display:flex;
+         justify-content: center;
        }
   .logo{
     color:var(--primaryWhite);

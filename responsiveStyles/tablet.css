@@ -1,0 +1,56 @@
+ @import url('https://fonts.googleapis.com/css?family=Bad+Script|Merienda&display=swap');
+/* primary site colors and transformation */
+:root{
+  --primaryBlack:rgb(36,41,46);
+  --btnTextBlack:#24292E;
+  --repoNameBlue:#0366D6;
+  --repoDetailsBlack:#586069;
+  --userDescriptionBlack:#24292E;
+  --userNameBlack:#586069;
+  --primaryWhite:rgb(255,255,255);
+  --notificationBlue:linear-gradient(#54a3ff,#006eed);
+  --btnBorderBlack:rgb(204, 193, 193);
+    --repoCountBlack:#D1D5DA80;
+  --mainGreen:#2EA44F;
+  --mainGrey:#FAFBFC;
+  --mainTransition:all 0.5s ease-out;
+  --mainSpacing:0.1rem;
+  --borderRadius:4px;
+  --mainOrange:#f36440;
+}
+/* end of primary site colors and transformation */
+@media only screen and (min-width:425px) and (max-width:960px){
+
+  /* styls for navbar */
+  .nav-bar{
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    background: var(--primaryBlack);
+    height: 50px;
+  }
+  .burger{
+    display: none;
+  }
+  .logo{
+    color:var(--primaryWhite);
+    font-size: 1.9em;
+  }
+  .navigation{
+    background:var(--primaryBlack);
+    display: flex;
+  }
+  .search-input-container{
+    width:100%;
+  }
+  .nav-link a{
+    text-decoration: none;
+    color:var(--primaryWhite);
+    font-size: .9em;
+  }
+
+  .link-username,.bottom-nav-link{
+    display: none;
+  }
+  /* end of styles for navbar */
+}
