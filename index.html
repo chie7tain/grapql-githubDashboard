@@ -6,6 +6,9 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/52f2afaff9.js" crossorigin="anonymous"></script>
     <!--end of font awesome  -->
+    <!-- icons specifically for github made by github -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <!-- end of icons from github -->
       <!-- google font -->
       <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
       <!-- styles sheet -->
@@ -30,12 +33,13 @@
         </div>
         <!-- end of responsive burger -->
           <div class="logo-container">
-            <i class="fab fa-github logo"></i>
+            <!-- <i class="fab fa-github logo"></i> -->
+            <span class="iconify logo" data-icon="octicon:mark-github-16" data-inline="false"></span>
           </div>
 
           <div class="notifications-activies-user-avatar-container">
             <div class="notification-icon-container">
-              <i class="far fa-bell"></i>
+              <span class="iconify bell" data-icon="octicon:bell-16" data-inline="false"></span>
               <div class="notification-dot"></div>
             </div>
             <div class="activities-icon-container">
@@ -84,29 +88,29 @@
         <!-- main view section -->
         <section class="main-view">
           <!-- overview repositories projects packages tab navigation bar -->
-          <div class="dashboard-tabs-container">
+          <div class="tabs-navigation-bar">
             <div class="tabs-container">
               <div class="Overview tabs">
                 <!-- <a href="#overview"> -->
-                  <i class="fas fa-book-open tabs-icons"></i>
+                  <span class="iconify tabs-icons" data-icon="octicon:book-16" data-inline="false"></span>
                   Overview
                 <!-- </a> -->
               </div>
               <div class="repositories tabs">
                 <!-- <a href="#repositories"> -->
-                  <i class="fas fa-book tabs-icons"></i>
+                  <span class="iconify tabs-icons" data-icon="octicon:repo-16" data-inline="false"></span>
                   Repositories  <span class="repo-count">50</span>
                 <!-- </a> -->
               </div>
               <div class="projects tabs">
                 <!-- <a href="#projects"> -->
-                  <i class="fas fa-th-list tabs-icons"></i>
+                  <span class="iconify tabs-icons" data-icon="octicon:project-16" data-inline="false"></span>
                   Projects
                 <!-- </a> -->
               </div>
               <div class="package tabs">
                 <!-- <a href="#package"> -->
-                  <i class="fas fa-cubes tabs-icons"></i>
+                  <span class="iconify tabs-icons" data-icon="octicon:package-16" data-inline="false"></span>
                   Packages
                 <!-- </a> -->
               </div>
@@ -137,7 +141,7 @@
             </div>
             <div class="followers-following-stars-container">
               <div class="followers-container">
-                <i class="fas fa-users"></i>
+              <span class="iconify" data-icon="octicon:people-16" data-inline="false"></span>
                 followers
               </div>
               <div class="dot">.</div>
@@ -146,13 +150,16 @@
               </div>
               <div class="dot">.</div>
               <div class="stars-container">
-                <i class="far fa-star"></i>
+                <span class="iconify" data-icon="octicon:star-16" data-inline="false"></span></i>
                 1
               </div>
             </div>
             <div class="external-links-container">
+              <div class="location-container">
+                <span class="iconify" data-icon="octicon:location-16" data-inline="false"></span> Abuja,Nigeria
+              </div>
               <div class="website-link">
-                <i class="fas fa-link"></i>
+                <span class="iconify" data-icon="octicon:link-24" data-inline="false"></span>
                 <a href="https://chie7tain.netlify.app"target="_blank">https://chie7tain.netlify.app/</a>
               </div>
               <div class="social-links-container">
@@ -161,7 +168,7 @@
               <hr class="line-btn-website-link-followers">
               <div class="highlights-container">
                 <h3 class="highlights-text">
-                  <i class="fas fa-bahai"></i>
+                  <span class="iconify" data-icon="octicon:north-star-16" data-inline="false"></span>
                   Artic Code Vault Contributor
                 </h3>
               </div>
@@ -191,7 +198,7 @@
                 </div>
               </div>
               <div class="new-repo-btn-container">
-                <button class="new-repo-btn"><i class="fas fa-book"></i> New</button>
+                <button class="new-repo-btn"><span class="iconify" data-icon="octicon:repo-16" data-inline="false"></span></i> New</button>
               </div>
             </div>
             <!-- individual repo details container -->
@@ -200,15 +207,87 @@
                 <h3 class="repo-name">porfolio</h3>
                 <div class="language-used-license-applied-time-stamp-container">
                   <div class="language-used">
-                    <i class="far fa-circle"></i>CSS
+                    <div class="language-color"></div> CSS
                   </div>
-                  <div class="license-applied"><i class="fas fa-balance-scale"></i> MIT License</div>
+                  <div class="license-applied"><span class="iconify" data-icon="octicon:law-24" data-inline="false"></span> MIT License</div>
                   <div class="time-stamp">Updated <span class="time-amount">3</span><span class="time-duration"> hours </span>ago</div>
                 </div>
               </div>
               <!-- ====== -->
               <div class="repo-stars-btn-container">
-                <button class="repo-stars"><i class="far fa-star"></i> Star</button>
+                <button class="repo-stars"><span class="iconify" data-icon="octicon:star-16" data-inline="false"></span> Star</button>
+              </div>
+            </div>
+            <!-- end of individual repo detail -->
+            <!-- individual repo details container -->
+            <div class="individual-repo-details-container">
+              <div class="repo-name-language-time-stamp-container">
+                <h3 class="repo-name">porfolio</h3>
+                <div class="language-used-license-applied-time-stamp-container">
+                  <div class="language-used">
+                    <div class="language-color"></div> CSS
+                  </div>
+                  <div class="license-applied"><span class="iconify" data-icon="octicon:law-24" data-inline="false"></span> MIT License</div>
+                  <div class="time-stamp">Updated <span class="time-amount">3</span><span class="time-duration"> hours </span>ago</div>
+                </div>
+              </div>
+              <!-- ====== -->
+              <div class="repo-stars-btn-container">
+                <button class="repo-stars"><span class="iconify" data-icon="octicon:star-16" data-inline="false"></span> Star</button>
+              </div>
+            </div>
+            <!-- end of individual repo detail -->
+            <!-- individual repo details container -->
+            <div class="individual-repo-details-container">
+              <div class="repo-name-language-time-stamp-container">
+                <h3 class="repo-name">porfolio</h3>
+                <div class="language-used-license-applied-time-stamp-container">
+                  <div class="language-used">
+                    <div class="language-color"></div> CSS
+                  </div>
+                  <div class="license-applied"><span class="iconify" data-icon="octicon:law-24" data-inline="false"></span> MIT License</div>
+                  <div class="time-stamp">Updated <span class="time-amount">3</span><span class="time-duration"> hours </span>ago</div>
+                </div>
+              </div>
+              <!-- ====== -->
+              <div class="repo-stars-btn-container">
+                <button class="repo-stars"><span class="iconify" data-icon="octicon:star-16" data-inline="false"></span> Star</button>
+              </div>
+            </div>
+            <!-- end of individual repo detail -->
+            <!-- individual repo details container -->
+            <div class="individual-repo-details-container">
+              <div class="repo-name-language-time-stamp-container">
+                <h3 class="repo-name">porfolio</h3>
+                <div class="language-used-license-applied-time-stamp-container">
+                  <div class="language-used">
+                    <div class="language-color"></div> CSS
+                  </div>
+                  <div class="license-applied"><span class="iconify" data-icon="octicon:law-24" data-inline="false"></span> MIT License</div>
+                  <div class="time-stamp">Updated <span class="time-amount">3</span><span class="time-duration"> hours </span>ago</div>
+                </div>
+              </div>
+              <!-- ====== -->
+              <div class="repo-stars-btn-container">
+                <button class="repo-stars"><span class="iconify" data-icon="octicon:star-16" data-inline="false"></span> Star</button>
+              </div>
+            </div>
+            <!-- end of individual repo detail -->
+            <!-- individual repo details container -->
+            <div class="individual-repo-details-container">
+              <div class="repo-name-language-time-stamp-container">
+                <h3 class="repo-name">porfolio</h3>
+                <div class="language-used-license-applied-time-stamp-container">
+                  <div class="language-used">
+                    <div class="language-color"></div> CSS
+                  </div>
+                  <div class="license-applied"><span class="iconify" data-icon="octicon:law-24" data-inline="false"></span> MIT License</div>
+                  <div class="time-stamp">Updated <span class="time-amount">3</span><span class="time-duration"> hours </span>ago</div>
+                </div>
+              </div>
+              <!-- ====== -->
+              <div class="repo-stars-btn-container">
+                <button class="repo-stars"><span class="iconify" data-icon="octicon:star-16" data-inline="false"></span> Star</button>
               </div>
             </div>
             <!-- end of individual repo detail -->
@@ -226,16 +305,16 @@
           </div>
         </div>
         <!-- end of repo list page btn -->
-        <hr>
+
         <!-- footer  -->
         <section class="footer">
           <div class="footer-logo-container">
-            <i class="fab fa-github logo"></i>
-          </div>
-          <div class="copyright-container">
-            <span class="copy">&COPY;</span>2020 GitHub, Inc.
+              <span class="iconify logo" data-icon="octicon:mark-github-16" data-inline="false"></span>
           </div>
           <div class="important-links-container">
+            <div class="copyright-container">
+              <span class="copy">&COPY;</span>2020 GitHub, Inc.
+            </div>
             <div class="important-link">Terms</div>
             <div class="important-link">Privacy</div>
             <div class="important-link">Security</div>

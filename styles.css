@@ -1,7 +1,7 @@
 /* default browser styles reset */
 *{
-  margin:0;
-  padding:0;
+  margin:0px;
+  padding:0px;
   box-sizing: border-box;
 }
 /* end of default styles reset */
@@ -30,11 +30,13 @@ html{
 }
 body{
     font-family: 'Public Sans', sans-serif;
+    overflow-x:hidden;
 }
 /* styles for main container */
 .main-container{
   width:1366px;
   margin:0 auto;
   max-width:100%;
-  overflow-x: hidden;
+  /* overflow-y: hidden; */
+  /* overflow-x: hidden; */
 }

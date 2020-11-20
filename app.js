@@ -37,10 +37,23 @@ const navSlide = ()=>{
 navSlide();
 // end of responsive script
 
-// this line of code add an orange border bottom color to the tabs when clicked by the user
-const [...tabs] = document.querySelectorAll(".tabs");//we use the rest parameter ... to convert the tabs nodelist to an array of tabs
-// tabs.forEach(tab =>{
-//   tab.addEventListener("click",(e)=>{
+// scritp fot the sticky tab
+// when the user scrolls the page execute stickyNav()
+window.onscroll = function (){
+  stickyNav()
+};
+// this is the tabs navigation bar
+let tabsNav = document.querySelector(".tabs-navigation-bar");
+console.log(tabsNav);
+// this line gets the position of the tabsNav
+let sticky = tabsNav.offsetTop;
 
-//   })
-// })
+// this function adds the sticky class to the tabsNav when the user reaches its scroll position. and removes the sticky class when the user leaves the scroll position
+function stickyNav(){
+  if(window.pageYOffset >= sticky ){
+    tabsNav.classList.add("sticky");
+  }else{
+    tabsNav.classList.remove("sticky");
+  }
+}
+
