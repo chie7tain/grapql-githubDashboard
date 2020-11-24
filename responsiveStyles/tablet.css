@@ -1,6 +1,7 @@
  @import url('https://fonts.googleapis.com/css?family=Bad+Script|Merienda&display=swap');
 /* primary site colors and transformation */
 :root{
+  --repoCountBlack:#D1D5DA80;
   --primaryBlack:rgb(36,41,46);
   --btnTextBlack:#24292E;
   --repoNameBlue:#0366D6;
@@ -13,76 +14,107 @@
     --repoCountBlack:#D1D5DA80;
   --inputBorderColor:rgb(133, 133, 133);
   --mainGreen:#2EA44F;
+  --lightGreen:#2fd15d;
   --mainGrey:#FAFBFC;
   --mainTransition:all 0.5s ease-out;
   --mainSpacing:0.1rem;
-  --borderRadius:4px;
+  --borderRadius:7px;
   --mainOrange:#f36440;
 }
 /* end of primary site colors and transformation */
 @media only screen and (min-width:426px) and (max-width:960px){
+.main-container{
+  width:100%;
+}
 
-  /* styls for navbar */
+
+/* styles for nav bar */
   .nav-bar{
-    display: flex;
+    display:flex;
+    background:var(--primaryBlack);
+    height: 70px;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    padding:0 10px;
+    z-index: 3;
     width:100%;
-    background: var(--primaryBlack);
-    height: 65px;
   }
   .burger{
-    display: none;
-  }
-  .logo-container{
-    /* border:1px solid red; */
-    width: 13%;
+    width:40px;
+    height:40px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items:center;
+    cursor:pointer;
   }
+  .line1,.line2,.line3{
+    background:var(--primaryWhite);
+    width:27px;
+    height:3px;
+    margin:3px;
+    transition:var(--mainTransition);
+  }
+  .toggle .line1{
+  transform:rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+  opacity:0;
+}
+.toggle .line3{
+  transform:rotate(45deg) translate(-5px,-6px);
+}
+.logo-container{
+  margin:0 auto;
+  /* border:1px solid red; */
+  width:100%;
+  display:flex;
+  justify-content: center;
+}
   .logo{
     color:var(--primaryWhite);
-    font-size: 1.9em;
+    font-size: 2.3em;
   }
-  .navigation{
-    background:var(--primaryBlack);
-    display: flex;
-    align-items:center;
-    justify-content: space-around;
-    /* border:1px solid red; */
-    width:100%;
-    margin-right:10px;
+  .user-avatar-options-container ,.activities-icon-container{
+    display:none;
+  }
+  .notifications-activies-user-avatar-container{
+    display:flex;
+    align-items: center;
+    margin-right:20px;
+  }
+  .notification-icon-container{
+    position: relative;
+  }
+  .bell{
+    color:var(--primaryWhite);
+    font-size:1.2em;
+    font-weight:50;
+  }
+
+  .notification-dot{
+    width:10px;
+    height: 10px;
+    border-radius:50px;
+    background:var(--notificationBlue);
+    position: absolute;
+    top:-5px;
+    right:0px;
   }
   .search-input-container{
-    position: relative;
-    width:45%;
+    width:100%;
+    margin:10px;
+    /* border: 1px solid; */
   }
   .search-input{
+    width:90%;
     background:none;
-    border:1px solid var(--inputBorderColor);
-    color:var(--btnTextBlack);
-    font-size: .7em;
-    height:26px;
-    border-radius: var(--borderRadius);
-    width:100%;
-    cursor:text;
-    text-indent: 8px;
-  }
-  .search-input:focus{
-    border:1px solid var(--repoNameBlue);
-    background: var(--primaryWhite);
-  }
-  .search-input:focus + .info-container{
-    display: none;
-  }
-  .search-input::-webkit-input-placeholder{
-    color:var(--repoCountBlack);
-    text-indent: 7px;
-  }
-  .search-input:-moz-placeholder{
+    position: relative;
+    border:1px solid var(--repoDetailsBlack);
+    padding:.4em;
     color:var(--primaryWhite);
-
+    border-radius: var(--borderRadius);
   }
   .info-container{
     border:1px solid var(--repoDetailsBlack);
@@ -90,8 +122,8 @@
     height:18px;
     border-radius: 4px;
     position: absolute;
-    top:5px;
-    right:9px;
+    right:39px;
+    top:15px;
     display: flex;
     justify-content: center;
     align-items:center;
@@ -103,71 +135,68 @@
     font-family: "Bad script";
     font-weight: 700;
   }
-  .top-nav-link{
-    display: none;
+  .navigation{
+    position:absolute;
+    top:50px;
+    background:var(--primaryBlack);
+    width:100%;
+    display: flex;
+    flex-direction:column;
+    transform: translateY(-120%);
+    transition: var(--mainTransition);
+    z-index:1;
   }
-  .nav-link{
-    margin:5px;
+  .nav-active{
+    transform:translateY(0%);
+    }
+  .navigation .nav-link{
+    padding:.5em;
+    margin:0 10px;
+    margin-bottom:7px;
+    border-bottom:1px solid var(--repoDetailsBlack);
+    width:90%;
+    opacity:0;
+  }
+  .username-link{
+    display:flex;
+    align-items:center;
+  }
+  .check{
+    display:inline-block;
+    align-items: center;
+    padding:2px;
+    margin-right:3px;
+  }
+  .top-nav-link{
+    margin-top:10px !important;
+     border-top:1px solid var(--repoDetailsBlack);
+  }
+  .bottom-nav-link{
+    margin-bottom:15px !important;
+    border-bottom:none !important;
   }
   .nav-link a{
-    text-decoration: none;
     color:var(--primaryWhite);
-    font-size: .6em;
-    letter-spacing: 1.1;
+    text-decoration:none;
   }
-
-  .link-username,.bottom-nav-link{
-    display: none;
+  /* this animates the nav links as the enter the frame when the burger is clicked */
+  @keyframes navLinkFade{
+    from {
+      opacity: 0;
+      transform: translateX(50%);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0%);
+    }
   }
-  .notifications-activies-user-avatar-container{
-    display:flex;
-    align-items: center;
-    justify-content: space-around;
-    width:25%;
-  }
-    .notification-icon-container{
-    position: relative;
-  }
-  .bell{
-    color:var(--primaryWhite);
-  }
-
-  .notification-dot{
-    width:9px;
-    height: 9px;
-    border-radius:50px;
-    background:var(--notificationBlue);
-    position: absolute;
-    top:-6px;
-    right:0px;
-  }
-  .activities-icon-container{
-    color:var(--primaryWhite);
-    /* font-weight:100; */
-    display: flex;
-    align-items: center;
-  }
-  .plus{
-    font-size:1.3em;
-  }
-  .user-avatar-options-container{
-    display: flex;
-    width:35%;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .user-avatar-tablet-nav{
-    width:25px;
-  }
-  .fa-caret-down{
-    color:var(--primaryWhite);
-  }
-
-  /* end of styles for navbar */
+  /* end of styles for nav bar */
+  /* ========================= */
 
   /* styles for main view */
-  .main-view{
+  /* .main-view{
     transition: 1s all linear;
+
     display:grid;
     grid-template-columns: 1fr 2.1fr;
     grid-template-rows:1fr;
@@ -175,22 +204,196 @@
                       "tabs tabs"
                       "userProfile reposContainer";
     position:relative;
-    /* top:10px; */
+  } */
+    .main-view{
+    display:grid;
+    width:100%;
+    margin:0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+                "userProfile "
+                "tabs "
+                "reposContainer";
   }
   /* end of styles for main view */
 /* ============================ */
 /* =================== */
   /* styles for tabs nav bar */
+/* styles for user profile  */
+  .user-profile-container{
+    grid-area:userProfile;
+    display: grid;
+    grid-template-columns: 1.1fr 5fr  ;
+    grid-template-areas:
+          "userAvatar userDetails userDetails"
+          "userStatus userStatus userStatus"
+          "aboutUser aboutUser aboutUser"
+          "editProfile editProfile editProfile"
+          "externalLinks externalLinks externalLinks"
+          "followers followers followers";
+  width:100%;
+  padding:0 20px;
+  margin:0 auto;
+  }
+  .user-avatar-container-profile{
+    grid-area:userAvatar;
+    width:100%;
+    margin-bottom: 20px;
+  }
+  .user-avatar{
+    border-radius:50%;
+    width:110px;
+  }
+  .user-details-container{
+    grid-area:userDetails;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width:100%;
+    padding:0 10px;
+  }
+  .profile-name{
+    color:var(--userDescriptionBlack);
+    font-weight: 550;
+  }
+  .username{
+    color:var(--userNameBlack);
+    font-weight:200;
+  }
+  .user-status-container{
+    grid-area:userStatus;
+    width:100%;
+    margin:10px auto;
+    display:flex;
+    align-items:center;
+    border:1px solid var(--btnBorderBlack);
+    border-radius: var(--borderRadius);
+    height:35px;
+    padding:0 10px;
+    cursor:pointer;
+  }
+  .status{
+    display: flex;
+    align-items:center;
+    cursor: pointer;
+    color:var(--userNameBlack);
+  }
+  .status:hover{
+    color:var(--repoNameBlue);
+    background:none;
+  }
+  .smile{
+    font-size:1.1em;
+    margin-right:5px;
+  }
 
+  .user-statement-container{
+    grid-area:aboutUser;
+    margin:10px auto;
+    width:100%;
+  }
+  .user-statement-text{
+    color:var(--userDescriptionBlack);
+    font-size:1.1em;
+  }
+  .edit-profile-btn-container{
+    grid-area:editProfile;
+    display:flex;
+    justify-content: center;
+    margin:10px auto;
+    width:100%;
+  }
+  .edit-profile-btn{
+    border:1px solid var(--btnBorderBlack);
+    width:100%;
+    height:35px;
+    border-radius: var(--borderRadius);
+    color:var(--btnTextBlack);
+    font-size:1em;
+    font-weight:550;
+    cursor:pointer;
+    transition:var(--mainTransition);
+  }
+  .edit-profile-btn:hover{
+    background:var(--mainGrey);
+  }
+  .location-container{
+    display:none;
+  }
+  .external-links-container{
+    grid-area:externalLinks;
+    margin:10px 5px;
+    font-size:1.2em;
+    color:var(--btnTextBlack);
+  }
+  .link{
+    color:var(--repoDetailsBlack);
+    font-size: .75em;
+  }
+  .website-link a{
+    color:var(--btnTextBlack);
+    text-decoration:none;
+    font-size:.8em;
+  }
+  .website-link a:hover{
+  text-decoration:underline;
+  color:var(--repoNameBlue);
+  }
+  .followers-following-stars-container{
+    grid-area:followers;
+    margin-bottom:20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:32%;
+    /* height: 30px; */
+  }
+  .followers-following-stars-container a{
+    text-decoration: none;
+    color:var(--userNameBlack);
+
+  }
+  .dot{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border:1px solid;
+    width:10px;
+  }
+
+  .octicon-people{
+    color:var(--userNameBlack);
+  }
+  .followers-container:hover{
+    color:var(--repoNameBlue);
+  }
+  .following-container:hover{
+    color:var(--repoNameBlue);
+  }
+  .stars-container:hover{
+    color:var(--repoNameBlue);
+  }
+  .social-links-container,.highlights-container,.organizations-container{
+    display:none;
+  }
+
+  /* end of styles for user profile */
+  /* ====================== */
   .tabs-navigation-bar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin:0 auto;
+    padding:0 10px;
     border-bottom: 1px solid var(--btnBorderBlack);
     height:60px;
     grid-area:tabs;
     width:100%;
     transition: 0.6s;
+  }
+  .tabs-user-avatar-container{
+    display:none;
   }
   .tabs-navigation-bar .tabs-container .tabs .tabs-user-avatar-container{
     transition:0.6s;
@@ -198,7 +401,8 @@
   .tabs-container{
     display: flex;
    justify-content:space-around;
-    width:65%;
+   align-items: center;
+    width:80%;
   }
   .tabs{
     margin-right: 15px;
@@ -206,249 +410,135 @@
     align-items:center;
     justify-content:space-around;
     width:18%;
-    font-size:.8em;
+    height:60px;
+    font-size:1em;
     color:var(--userNameBlack);
   }
 
   .sticky{
     position:fixed;
-    top:0;
+    top:50px;
     /* width:100%; */
     background: var(--primaryWhite);
     /* transition: .7s all linear; */
     z-index:3;
   }
-  .sticky .main-view{
+  /* .sticky .main-view{
     padding-top: 60px;
     transition: 1s all ease-in-out;
-  }
+  } */
   .repositories{
     width:25%;
     color:var(--btnTextBlack);
-    border-bottom:2px solid var(--mainOrange);
+    font-weight: 600;
+    border-bottom:3px solid var(--mainOrange);
     cursor:pointer;
   }
-  .tabs-user-avatar-container{
+  .repo-count{
+    background:var(--repoCountBlack);
+    border-radius:40%;
+    width:25px;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width:15%;
-    /* border:1px solid red; */
-  }
-  .user-avatar-tabs{
-    width:30px;
-    height:30px;
-    border-radius: 50%;
+    justify-content: center;
   }
   /* end of styles for tabs nav bar */
   /* =========================== */
-  /* styles for user profile  */
-  .user-profile-container{
-    grid-area:userProfile;
-    display: flex;
-    flex-direction:column;
-    align-items:center;
-    position: absolute;
-    top:-2em;
-    /* z-index:4; */
-    padding-left:10px;
-    padding-right: 10px;
-  }
-  .user-avatar{
-    position: relative;
-    z-index: 3;
-    transition:all 1s linear;
-    border-radius: 50%;
-    width:170px;
-  }
-  .profile-name{
-    color:var(--btnTextBlack);
-    font-size:1.3em;
-  }
-  .username{
-    color: var(--userNameBlack);
-    font-size: medium;
-    font-weight: 100;
-  }
-  .user-statement-container{
-    margin:10px auto;
-  }
-  .user-statement-text{
-    font-size:.8em;
-    color:var(--userDescriptionBlack);
-    line-height: 2em;
-  }
-  .edit-profile-btn-container{
-    width:100%;
-  }
-  .edit-profile-btn{
-    width:100%;
-    border:1px solid var(--btnBorderBlack);
-    background:var(--mainGrey);
-    border-radius:var(--borderRadius);
-    height:30px;
-  }
-  .followers-following-stars-container{
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
-    width:100%;
-    margin:20px auto;
-    color:var(--userNameBlack);
-  }
-  .followers-container{
-    width:50%;
-    font-size:.8em;
-    display:flex;
-  }
-  .number-of-followers{
-    color:var(--btnTextBlack);
-    margin:auto 5px;
-    font-weight: 600;
-  }
-  .following-container{
-    width:50%;
-    font-size:small;
-    display: flex;
-  }
-  .number-of-following{
-    color:var(--btnTextBlack);
-    margin:auto 5px;
-    font-weight: 600;
-  }
-  .stars-container{
-    width:30%;
-    display: flex;
-    align-items:center;
-    font-size:small;
-  }
-  .number-of-stars{
-    color:var(--btnTextBlack);
-    margin:auto 5px;
-    font-weight: 600;
-  }
-  .location-container{
-    display:none;
-  }
-  .website-link{
-    font-size:small;
-    margin:5px auto;
-  }
-  .website-link a{
-    text-decoration:none;
-    color:var(--userNameBlack);
-  }
-  .social-links-container{
-    font-size:small;
-    margin:5px auto;
-    height:50px;
-    border-bottom:1px solid var(--btnBorderBlack);
-  }
-  .fa-twitter{
-    color:var(--userNameBlack);
-  }
-  .social-links-container a{
-    text-decoration:none;
-    color:var(--userNameBlack);
-  }
-  .highlights-container{
-    color:var(--userNameBlack);
-    margin:20px auto;
-    border-bottom: 1px solid var(--btnBorderBlack);
-    height: 70px;
-  }
-  .highlights-heading{
-    font-size:1em;
-    margin-bottom:5px;
-  }
-  .highlights-text{
-    font-size:.7em;
-  }
-  .organizations-container{
-    height:100px;
-    border-bottom:1px solid var(--btnBorderBlack);
-  }
-  .organizations-heading{
-    color:var(--userNameBlack);
-    margin-bottom:10px;
-  }
-  .organizations-image{
-    width:30px;
-    border-radius: 4px;
-  }
-  /* end of styles for user profile */
-  /* ====================== */
 
-  /* styles for tabs content view */
   .tabs-content-view{
-    grid-area: reposContainer;
+    grid-area:reposContainer;
     width:100%;
+    padding:0 10px;
+    margin:20px auto;
   }
   .input-type-language-new-repo-container{
-    display:flex;
+    display:grid;
     width:100%;
-    height:50px;
-    margin-top:10px;
-    /* border:1px solid blue; */
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "inputContainer  inputContainer"
+      "typeContainer  newRepoContainer" ;
+    padding-left:10px;
   }
   .find-repo-container-input{
-    width:80%;
+    width:100%;
     display: flex;
     justify-content: center;
-    align-items:center;
+    margin-bottom: 20px;
+    grid-area:inputContainer;
   }
   .find-repo-input{
+    height:35px;
+    text-indent:10px;
     border-radius: var(--borderRadius);
-    width:90%;
-    height:30px;
-    text-indent: 10px;
+    width:95%;
     border:1px solid var(--btnBorderBlack);
   }
   .type-language-container{
+    grid-area:typeContainer;
     display:flex;
-    justify-content: space-between;
-    align-items:center;
+    justify-content: space-around;
     width:100%;
+    margin-left:19px;
   }
   .type-details-container{
-    width:100%;
+    grid-area:typeContainer;
+    width:70%;
   }
   .type-btn{
     background:var(--mainGrey);
+    height:35px;
+    width:70%;
     border:1px solid var(--btnBorderBlack);
     border-radius:var(--borderRadius);
     color:var(--userNameBlack);
-    height:30px;
-    width:80px;
-    margin-right:10px;
+    font-size: 1em;
   }
   .select-language-container{
     width:100%;
   }
   .select-language-btn{
     background:var(--mainGrey);
+    height: 35px;
     border:1px solid var(--btnBorderBlack);
     border-radius: var(--borderRadius);
     color:var(--userNameBlack);
-    width:120px;
-    height:30px;
+    font-size:1em;
+    width:100%;
+  }
+  .select-language-btn:hover{
+    background:var(--mainGrey)
   }
   .all-text{
     color:var(--userDescriptionBlack);
   }
   .new-repo-btn-container{
+    grid-area:newRepoContainer;
     display: flex;
-    justify-content: center;
-    align-items:center;
-    width:50%;
+    justify-content: flex-end;
+    padding:0 10px;
+    width:100%;
+  }
+
+  .new-repo-icon{
+    margin-right: 5px;
   }
   .new-repo-btn{
     background: var(--mainGreen);
     border:none;
-    width:70px;
-    height:30px;
+    height:35px;
+    width:30%;
     color:var(--primaryWhite);
     border-radius: var(--borderRadius);
+    font-size:1em;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    transition: var(--mainTransition);
+  }
+  .new-repo-btn:hover{
+    background: var(--lightGreen);
+    cursor:pointer;
   }
 
   .individual-repo-details-container{
@@ -456,7 +546,7 @@
     justify-content: space-between;
     align-items: center;
     margin:10px;
-    /* border-top:1px solid var(--btnBorderBlack); */
+    border-top:1px solid var(--btnBorderBlack);
     border-bottom:1px solid var(--btnBorderBlack);
   }
   .repo-name-language-time-stamp-container{
@@ -488,7 +578,7 @@
   }
   .language-used{
     font-size:.8em;
-   color:var(--btnTextBlack);
+ color:var(--btnTextBlack);
     margin-right: 5px;
     display: flex;
     align-items:center;
@@ -518,6 +608,8 @@
     color:var(--btnTextBlack);
     font-size: .7em;
   }
+  /* end of styles for tabs content view container */
+  /* ========================= */
   /* end of styles for tabs content view container */
   /* ========================= */
   /* end of styles for tabs content view */
