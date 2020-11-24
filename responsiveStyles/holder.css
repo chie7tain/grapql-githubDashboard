@@ -1,0 +1,138 @@
+.input-type-language-new-repo-container{
+    display:flex;
+    width:100%;
+    height:50px;
+    margin-top:10px;
+    /* border:1px solid blue; */
+  }
+  .find-repo-container-input{
+    width:80%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+  }
+  .find-repo-input{
+    /* padding:.6em; */
+    border-radius: var(--borderRadius);
+    width:90%;
+    height:30px;
+    text-indent: 10px;
+    border:1px solid var(--btnBorderBlack);
+  }
+  .type-language-container{
+    /* grid-area:typeContainer; */
+    display:flex;
+    justify-content: flex-start;
+    align-items:center;
+    width:100%;
+  }
+  .type-details-container{
+    /* grid-area:typeContainer; */
+    width:100%;
+  }
+  .type-btn{
+    background:var(--mainGrey);
+    border:1px solid var(--btnBorderBlack);
+    border-radius:var(--borderRadius);
+    color:var(--userNameBlack);
+    height:30px;
+    width:80px;
+  }
+  .select-language-container{
+    width:100%;
+  }
+  .select-language-btn{
+    background:var(--mainGrey);
+    border:1px solid var(--btnBorderBlack);
+    border-radius: var(--borderRadius);
+    color:var(--userNameBlack);
+    width:120px;
+    height:30px;
+  }
+  .all-text{
+    color:var(--userDescriptionBlack);
+  }
+  .new-repo-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width:50%;
+  }
+  .new-repo-btn{
+    background: var(--mainGreen);
+    border:none;
+    width:70px;
+    height:30px;
+    color:var(--primaryWhite);
+    border-radius: var(--borderRadius);
+  }
+
+  .individual-repo-details-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:10px;
+    border-top:1px solid var(--btnBorderBlack);
+    border-bottom:1px solid var(--btnBorderBlack);
+  }
+  .repo-name-language-time-stamp-container{
+    display:flex;
+    flex-direction:column;
+    margin-bottom: 20px;
+    width:70%;
+  }
+  .repo-name{
+    color:var(--repoNameBlue);
+    font-size: 1em;
+    font-weight:550;
+    margin-top:20px;
+    margin-bottom: 10px;
+  }
+  .language-used-license-applied-time-stamp-container{
+    display: flex;
+    justify-content:space-between;
+    width:100%;
+  }
+  .language-color{
+    background:var(--mainOrange);
+    width:10px;
+    height:10px;
+    border:none;
+    border-radius: 50%;
+    display:inline-block;
+    margin-right:3px;
+  }
+  .language-used{
+    font-size:.8em;
+   color:var(--btnTextBlack);
+    margin-right: 5px;
+    display: flex;
+    align-items:center;
+  }
+  .license-applied{
+    font-size:.8em;
+    color:var(--btnTextBlack);
+    /* margin-right:px; */
+  }
+  .time-stamp{
+    font-size:.7em;
+    color:var(--btnTextBlack);
+  }
+  .repo-stars-btn-container{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    /* width:30%; */
+    /* border:1px solid; */
+  }
+  .repo-stars{
+    background: var(--mainGrey);
+    border:1px solid var(--btnBorderBlack);
+    padding:.3em .6em;
+    border-radius: var(--borderRadius);
+    color:var(--btnTextBlack);
+    font-size: .7em;
+  }
+  /* end of styles for tabs content view container */
+  /* ========================= */

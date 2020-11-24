@@ -39,21 +39,24 @@ navSlide();
 
 // scritp fot the sticky tab
 // when the user scrolls the page execute stickyNav()
-window.onscroll = function (){
-  stickyNav()
-};
-// this is the tabs navigation bar
-let tabsNav = document.querySelector(".tabs-container");
-console.log(tabsNav);
-// this line gets the position of the tabsNav
-let sticky = tabsNav.offsetTop;
-
+window.addEventListener("scroll", ()=>{
+  stickyTabs()
+});
 // this function adds the sticky class to the tabsNav when the user reaches its scroll position. and removes the sticky class when the user leaves the scroll position
-function stickyNav(){
-  if(window.pageYOffset >= sticky ){
+function stickyTabs(){
+  // this is the tabs navigation bar
+  let tabsNav = document.querySelector(".tabs-container");
+  // this line gets the position of the tabsNav
+  let tabsOffsetTop = tabsNav.offsetTop;
+  if(window.pageYOffset >= tabsOffsetTop){
     tabsNav.classList.add("sticky");
   }else{
     tabsNav.classList.remove("sticky");
   }
 }
+
+// window.addEventListener("scroll",()=>{
+//   let tabsNav = document.querySelector(".tabs-navigation-bar");
+//   tabsNav.classList.toggle("sticky",window.scrollY > 0)});
+
 

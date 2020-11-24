@@ -324,11 +324,21 @@
   /* =============== */
 
   /* styles for dashboard tabs container */
-  .tabs-container{
+  .tabs-navigation-bar{
+    border:1px solid red;
     grid-area:tabs;
     width: 100%;
     overflow-x: scroll;
     transition: 1s all linear;
+  }
+  .tabs-user-avatar-container{
+    border:1px solid blue;
+    display: none;
+  }
+  .tabs-container{
+  }
+  .tabs-user-avatar-container{
+    display:none;
   }
   /* styles for the sticky tabs dashboard */
   .sticky{
@@ -340,10 +350,10 @@
     /* padding-top:10px; */
     z-index:3;
   }
-  .sticky + .tabs-content-view {
+  /* .sticky + .tabs-content-view {
     padding-top:60px;
     transition: 5s all ease-in;
-  }
+  } */
 
   /* end of style for the sticky tabs navigation */
     /* styles for tabs */
@@ -936,6 +946,9 @@
     width: 100%;
     overflow-x: scroll;
     transition: 1s all linear;
+  }
+    .tabs-user-avatar-container{
+    display:none;
   }
   /* styles for the sticky tabs dashboard */
   .sticky{
