@@ -60,3 +60,11 @@ navSlide();
 //   tabsNav.classList.toggle("sticky",window.scrollY > 0)});
 
 
+// focus script for search input in nav bar
+// let searchInput = document.querySelector(".search-input");
+// // let desk = CSSMediaRule("min-width:961")
+// searchInput.addEventListener('focus',()=>{
+//     navigation.classList.remove("search-navigation");
+//   })
+//   searchInput.on
+//   navigation.classList.add("search-navigation");

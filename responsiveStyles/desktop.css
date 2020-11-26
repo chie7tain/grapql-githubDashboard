@@ -24,9 +24,9 @@
 
   /* styls for navbar */
   .nav-bar{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+   display:grid;
+   grid-template-columns: .1fr 2fr .22fr;
+   grid-template-areas: "logo navigation activities";
     width:100%;
     background: var(--primaryBlack);
     height: 65px;
@@ -35,8 +35,7 @@
     display: none;
   }
   .logo-container{
-    /* border:1px solid red; */
-    width: 13%;
+    grid-area: logo;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,43 +45,34 @@
     font-size: 1.9em;
   }
   .navigation{
+    grid-area:navigation;
     background:var(--primaryBlack);
     display: flex;
     align-items:center;
-    justify-content: space-around;
-    /* border:1px solid red; */
-    width:100%;
-    margin-right:10px;
+    justify-content: space-between;
+    width:80%;
+
   }
   .search-input-container{
     position: relative;
-    width:45%;
+    width:30%;
   }
   .search-input{
     background:none;
     border:1px solid var(--inputBorderColor);
     color:var(--btnTextBlack);
     font-size: .7em;
-    height:26px;
+    height:30px;
     border-radius: var(--borderRadius);
     width:100%;
     cursor:text;
     text-indent: 8px;
+    transition:var(--mainTransition);
   }
-  .search-input:focus{
+  .search-input-container:focus, .search-input:focus{
     border:1px solid var(--repoNameBlue);
     background: var(--primaryWhite);
-  }
-  .search-input:focus + .info-container{
-    display: none;
-  }
-  .search-input::-webkit-input-placeholder{
-    color:var(--repoCountBlack);
-    text-indent: 7px;
-  }
-  .search-input:-moz-placeholder{
-    color:var(--primaryWhite);
-
+    width:150%;
   }
   .info-container{
     border:1px solid var(--repoDetailsBlack);
@@ -91,7 +81,7 @@
     border-radius: 4px;
     position: absolute;
     top:5px;
-    right:9px;
+    right:5px;
     display: flex;
     justify-content: center;
     align-items:center;
@@ -103,27 +93,45 @@
     font-family: "Bad script";
     font-weight: 700;
   }
+   .search-input:focus + .info-container{
+    display: none;
+  }
+  .search-input::-webkit-input-placeholder{
+    color:var(--repoCountBlack);
+    text-indent: 7px;
+  }
+  .search-input:-moz-placeholder{
+    color:var(--primaryWhite);
+
+  }
   .top-nav-link{
     display: none;
   }
-  .nav-link{
-    margin:5px;
+  .nav-link-container{
+    display: flex;
+    justify-content: space-around;
+    width:50%;
+  }
+  .search-input:focus +.nav-link-container{
+    width:20%;
   }
   .nav-link a{
     text-decoration: none;
     color:var(--primaryWhite);
-    font-size: .6em;
+    font-size: .8em;
+    font-weight: 500;
     letter-spacing: 1.1;
   }
 
   .link-username,.bottom-nav-link{
     display: none;
   }
-  .notifications-activies-user-avatar-container{
+  .notifications-activities-user-avatar-container{
+    grid-area:activities;
     display:flex;
     align-items: center;
     justify-content: space-around;
-    width:25%;
+    width:100%;
   }
     .notification-icon-container{
     position: relative;
@@ -143,7 +151,6 @@
   }
   .activities-icon-container{
     color:var(--primaryWhite);
-    /* font-weight:100; */
     display: flex;
     align-items: center;
   }
@@ -169,7 +176,7 @@
   .main-view{
     transition: 1s all linear;
     display:grid;
-    grid-template-columns: 1fr 2.1fr;
+    grid-template-columns: .8fr 2.1fr;
     grid-template-rows:1fr;
     grid-template-areas:
                       "tabs tabs"
@@ -181,29 +188,45 @@
 /* ============================ */
 /* =================== */
   /* styles for tabs nav bar */
-
   .tabs-navigation-bar{
-    display: flex;
-    justify-content: space-between;
-    margin:0 auto;
-    border-bottom: 1px solid var(--btnBorderBlack);
-    height:60px;
     grid-area:tabs;
+    display: flex;
+    justify-content: space-around;
+    margin:0 auto;
+    padding:0 10px;
+    border-bottom: .2px solid var(--btnBorderBlack);
+    height:60px;
     width:100%;
+    transition: 0.6s;
   }
+
+  .tabs-navigation-bar .tabs-container .tabs .tabs-user-avatar-container{
+    transition:0.6s;
+  }
+
   .tabs-container{
     display: flex;
    justify-content:space-around;
-    width:65%;
+   align-items: center;
+    width:50%;
   }
   .tabs{
-    margin-right: 15px;
     display: flex;
     align-items:center;
-    justify-content:space-around;
-    width:18%;
-    font-size:.8em;
+    justify-content:center;
+    width:25%;
+    height:60px;
+    font-size:1em;
     color:var(--userNameBlack);
+    transition: var(--mainTransition);
+  }
+  .tabs-icons{
+    margin-right:5px;
+    font-size:1em
+  }
+  .overview,.projects,.packages{
+    cursor:pointer;
+    border-bottom:3px solid var(--btnBorderBlack);
   }
   .sticky{
     position:fixed;
@@ -221,7 +244,7 @@
   .repositories{
     width:25%;
     color:var(--btnTextBlack);
-    border-bottom:2px solid var(--mainOrange);
+    border-bottom:3px solid var(--mainOrange);
     cursor:pointer;
   }
   .tabs-user-avatar-container{
@@ -229,12 +252,14 @@
     align-items: center;
     justify-content: space-around;
     width:15%;
-    /* border:1px solid red; */
   }
   .user-avatar-tabs{
     width:30px;
     height:30px;
     border-radius: 50%;
+  }
+  .tabs-user-avatar-container{
+  display:none;
   }
   /* end of styles for tabs nav bar */
   /* =========================== */
@@ -243,36 +268,82 @@
     grid-area:userProfile;
     display: flex;
     flex-direction:column;
-    align-items:center;
-    position: absolute;
-    top:-2em;
-    /* z-index:4; */
-    padding-left:10px;
-    padding-right: 10px;
+    /* position: absolute; */
+    /* top:-2em; */
+    padding-left:70px;
+    padding-right:10px;
+  }
+  .user-avatar-container-profile{
+    position: relative;
   }
   .user-avatar{
     position: relative;
     z-index: 3;
     transition:all 1s linear;
     border-radius: 50%;
-    width:170px;
+    width:280px;
+  }
+  .user-status-container{
+    display: none;
+  }
+  .user-status-container-avatar-tag{
+    position: absolute;
+    bottom:20px;
+    right:25px;
+    z-index: 3;
+    width:40px;
+    height:40px;
+   background: var(--mainGrey);
+    display:flex;
+    align-items:center;
+    border:1px solid var(--btnBorderBlack);
+    border-radius:50%;
+    padding:0 10px;
+    cursor:pointer;
+    transition:var(--mainTransition);
+  }
+  .status-text-desktop{
+    display: none;
+  }
+  .user-status-container-avatar-tag:hover{
+    width:100px;
+    border-radius:15px;
+    height:35px;
+  }
+  .user-status-container-avatar-tag:hover +.status-text-desktop{
+    display:block;
+  }
+  .status-avatar-tag{
+    display: flex;
+    align-items:center;
+    cursor: pointer;
+    color:var(--userNameBlack);
+  }
+  .status-avatar-tag:hover{
+    color:var(--repoNameBlue);
+    background:none;
+  }
+  .smile{
+    font-size:1.1em;
+    margin-right:5px;
   }
   .profile-name{
     color:var(--btnTextBlack);
-    font-size:1.3em;
+    font-size:1.5em;
+    font-weight:500;
   }
   .username{
     color: var(--userNameBlack);
-    font-size: medium;
-    font-weight: 100;
+    font-size: 1.3em;
+    font-weight: 350;
   }
   .user-statement-container{
     margin:10px auto;
   }
   .user-statement-text{
-    font-size:.8em;
+    font-size:1em;
     color:var(--userDescriptionBlack);
-    line-height: 2em;
+    line-height: 1.5;
   }
   .edit-profile-btn-container{
     width:100%;
@@ -282,7 +353,10 @@
     border:1px solid var(--btnBorderBlack);
     background:var(--mainGrey);
     border-radius:var(--borderRadius);
-    height:30px;
+    height:35px;
+    color:var(--btnTextBlack);
+    font-size:.9em;
+    font-weight: 500;
   }
   .followers-following-stars-container{
     display:flex;
