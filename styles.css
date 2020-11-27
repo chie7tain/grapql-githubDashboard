@@ -35,10 +35,18 @@ body{
 }
 /* styles for main container */
 .main-container{
-  /* width:1366px; */
+  width:1366px;
   margin:0 auto;
   width:100%;
   /* position: relative; */
   /* overflow-y: hidden; */
   /* overflow-x: hidden; */
+}
+/* styles for links for the footer*/
+.important-link{
+  text-decoration:none;
+}
+.important-link:hover{
+  text-decoration:underline 1px solid var(--repoNameBlue);
+  cursor: pointer;
 }

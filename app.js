@@ -55,16 +55,34 @@ navSlide();
 //   }
 // }
 
-// window.addEventListener("scroll",()=>{
-//   let tabsNav = document.querySelector(".tabs-navigation-bar");
-//   tabsNav.classList.toggle("sticky",window.scrollY > 0)});
+window.addEventListener("scroll",()=>{
+  let tabsNav = document.querySelector(".tabs-navigation-bar");
+  let tabsOffsetTop = tabsNav.offsetTop;
+  tabsNav.classList.toggle("sticky",window.scrollY > tabsOffsetTop)});
 
 
-// focus script for search input in nav bar
-// let searchInput = document.querySelector(".search-input");
-// // let desk = CSSMediaRule("min-width:961")
-// searchInput.addEventListener('focus',()=>{
-//     navigation.classList.remove("search-navigation");
-//   })
-//   searchInput.on
-//   navigation.classList.add("search-navigation");
+let repoStarBtn = document.querySelector(".repo-stars");
+let starIcon = document.querySelector(".star");
+repoStarBtn.addEventListener("click",()=>{
+  console.log(repoStarBtn.innerHTML);
+  console.log(starIcon.classList)
+  let fullStar = `<svg class="fullStar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815l4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97l.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25z" fill="#626262"/></svg>`;
+  let cleanStar = `
+    <svg class="star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815l4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97l.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45l2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084l2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456l-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183l-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694v.001z"
+                      fill="#626262" /></svg>
+  `;
+  if(starIcon.classList.contains("star")){
+    // repoStarBtn.textContent = `${ fullStar} Unstar`;
+    repoStarBtn.innerHTML = `${fullStar} Unstar`;
+    // repoStarBtn.classList.add("repo-stars-style");
+    // starIcon.classList.add("star-style");
+  }else{
+    repoStarBtn.innerHTML = `${cleanStar}Star`;
+  }
+
+})

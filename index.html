@@ -22,75 +22,75 @@
 
   </head>
   <body>
+          <!-- nav bar -->
+          <nav class="nav-bar">
+            <!-- responsive burger  -->
+            <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+            <!-- end of responsive burger -->
+            <div class="logo-container">
+              <span class="iconify logo" data-icon="octicon:mark-github-16" data-inline="false"></span>
+            </div>
+            <!-- navigation -->
+            <div class="navigation">
+              <div class="search-input-container">
+                <input type="text" placeholder="Search or jump to..." class="search-input">
+                <div class="info-container">
+                  <i class="info">i</i>
+                </div>
+              </div>
+              <div class="nav-link-container">
+
+                <div class="nav-link top-nav-link">
+                  <a href="#">Dashboard</a>
+                </div>
+                <div class="nav-link">
+                  <a href="#">Pull requests</a>
+                </div>
+                <div class="nav-link">
+                  <a href="#">Issues</a>
+                </div>
+                <div class="nav-link">
+                  <a href="#">MarketPlace</a>
+                </div>
+                <div class="nav-link">
+                  <a href="#">Explore</a>
+                </div>
+              </div>
+              <div class="nav-link link-username ">
+                <a href="#" class="username-link">
+                  <img src="./assets/githubImage.jpg" alt="avatar of user" style="width:20px;border-radius:50px" class="check">
+                  <div class="username-nav">chie7tain</div>
+                </a>
+              </div>
+              <div class="nav-link bottom-nav-link">
+                <a href="#"><i class="fas fa-sign-out-alt"></i> Sign out</a>
+              </div>
+            </div>
+            <!-- end of navigation -->
+            <div class="notifications-activities-user-avatar-container">
+              <div class="notification-icon-container">
+                <span class="iconify bell" data-icon="octicon:bell-16" data-inline="false"></span>
+                <div class="notification-dot"></div>
+              </div>
+              <div class="activities-icon-container">
+                <span class="iconify plus" data-icon="octicon:plus-24" data-inline="false"></span>
+                <i class="fas fa-caret-down"></i>
+              </div>
+              <div class="user-avatar-options-container">
+                <img src="./assets/githubImage.jpg" style="border-radius:50%" alt="user avatar" class="user-avatar-tablet-nav">
+                <i class="fas fa-caret-down"></i>
+              </div>
+            </div>
+
+          </nav>
+          <!-- end of nav bar -->
     <!-- container -->
     <div class="main-container">
-      <div class="nav-container"></div>
-      <!-- nav bar -->
-      <nav class="nav-bar">
-        <!-- responsive burger  -->
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-        <!-- end of responsive burger -->
-          <div class="logo-container">
-            <span class="iconify logo" data-icon="octicon:mark-github-16" data-inline="false"></span>
-          </div>
-        <!-- navigation -->
-        <div class="navigation">
-          <div class="search-input-container">
-            <input type="text" placeholder="Search or jump to..." class="search-input">
-            <div class="info-container">
-              <i class="info">i</i>
-            </div>
-          </div>
-          <div class="nav-link-container">
 
-            <div class="nav-link top-nav-link">
-              <a href="#">Dashboard</a>
-            </div>
-            <div class="nav-link">
-              <a href="#">Pull requests</a>
-            </div>
-            <div class="nav-link">
-              <a href="#">Issues</a>
-          </div>
-          <div class="nav-link">
-            <a href="#">MarketPlace</a>
-          </div>
-          <div class="nav-link">
-            <a href="#">Explore</a>
-          </div>
-        </div>
-          <div class="nav-link link-username ">
-            <a href="#" class="username-link">
-              <img src="./assets/githubImage.jpg" alt="avatar of user" style="width:20px;border-radius:50px" class="check">
-              <div class="username-nav">chie7tain</div>
-            </a>
-          </div>
-          <div class="nav-link bottom-nav-link">
-            <a href="#"><i class="fas fa-sign-out-alt"></i> Sign out</a>
-          </div>
-        </div>
-        <!-- end of navigation -->
-          <div class="notifications-activities-user-avatar-container">
-            <div class="notification-icon-container">
-              <span class="iconify bell" data-icon="octicon:bell-16" data-inline="false"></span>
-              <div class="notification-dot"></div>
-            </div>
-            <div class="activities-icon-container">
-              <span class="iconify plus" data-icon="octicon:plus-24" data-inline="false"></span>
-              <i class="fas fa-caret-down"></i>
-            </div>
-            <div class="user-avatar-options-container">
-              <img src="./assets/githubImage.jpg" style="border-radius:50%" alt="user avatar" class="user-avatar-tablet-nav">
-              <i class="fas fa-caret-down"></i>
-            </div>
-          </div>
-
-        </nav>
-        <!-- end of nav bar -->
         <!-- main view section -->
         <section class="main-view">
           <!-- overview repositories projects packages tab navigation bar -->
@@ -171,14 +171,14 @@
             </div>
           <div class="followers-following-stars-container">
               <a href="#" class="followers-container">
-              <span class="iconify" data-icon="octicon:people-16" data-inline="false"></span><span class="number-of-followers">1</span>
-                follower .
-              </a>
-
+              <span class="iconify octicon-people" data-icon="octicon:people-16" data-inline="false"></span><span class="number-of-followers">1</span>
+              follower
+            </a>
+                <div class="dot"></div>
               <a href="#" class="following-container">
                 <span class="number-of-following">3</span> following
               </a>
-              .
+              <div class="dot"></div>
               <a href="#"class="stars-container">
                 <span class="iconify" data-icon="octicon:star-16" data-inline="false"></span> <span class="number-of-stars">1</span>
               </a>
@@ -195,7 +195,6 @@
                 <i class="fab fa-twitter"></i>
                 <a href="https://twitter.com/@ol7mpian" target="_blank">@ol7mpian</a>
               </div>
-              <!-- <hr class="line-btn-website-link-followers"> -->
               <div class="highlights-container">
                 <h3 class="highlights-heading">
                   Hightlights
@@ -205,7 +204,6 @@
                   Artic Code Vault Contributor
                 </p>
               </div>
-              <!-- <hr class="line-btn-website-link-followers"> -->
               <div class="organizations-container">
                 <h3 class="organizations-heading">Organizations</h3>
                 <img src="./assets/organizations-icon.jpg" alt="icon of organization user belong to" class="organizations-image">
@@ -242,14 +240,629 @@
                   <div class="language-used">
                     <div class="language-color"></div> CSS
                   </div>
-                  <div class="license-applied"><span class="iconify" data-icon="octicon:law-24" data-inline="false"></span> MIT License</div>
+                  <div class="license-applied">
+                    <svg class="law-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8.75.75a.75.75 0 0 0-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 0 1 3.984 3H1.75a.75.75 0 0 0 0 1.5h.428L.066 9.192a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.514 3.514 0 0 0 .686.45A4.492 4.492 0 0 0 3 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 0 0 .686-.45l.045-.04l.016-.015l.006-.006l.002-.002l.001-.002L5.25 9.5l.53.53a.75.75 0 0 0 .154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 0 1 .124-.033h.984V13h-2.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-2.5V3.5h.984a.25.25 0 0 1 .124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.517 3.517 0 0 0 .686.45A4.492 4.492 0 0 0 13 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 0 0 .686-.45l.045-.04l.01-.01l.006-.005l.006-.006l.002-.002l.001-.002l-.529-.531l.53.53a.75.75 0 0 0 .154-.838L13.823 4.5h.427a.75.75 0 0 0 0-1.5h-2.234a.25.25 0 0 1-.124-.033l-1.29-.736A1.75 1.75 0 0 0 9.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"
+                      fill="#626262" /></svg> MIT License</div>
                   <div class="time-stamp">Updated <span class="time-amount">3</span><span class="time-duration"> hours </span>ago</div>
                 </div>
               </div>
               <!-- ====== -->
               <div class="repo-stars-btn-container">
                 <button class="repo-stars">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                  <svg class="star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815l4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97l.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45l2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084l2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456l-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183l-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694v.001z"
+                      fill="#626262" /></svg> Star</button>
+              </div>
+            </div>
+<!-- end of individual repo details -->
+            <!-- individual repo details container -->
+            <div class="individual-repo-details-container">
+              <div class="repo-name-language-time-stamp-container">
+                <a href="#" class="repo-name">grapql-githubDashboard</a>
+                <div class="language-used-license-applied-time-stamp-container">
+                  <div class="language-used">
+                    <div class="language-color"></div> CSS
+                  </div>
+                  <div class="license-applied">
+                    <svg class="law-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8.75.75a.75.75 0 0 0-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 0 1 3.984 3H1.75a.75.75 0 0 0 0 1.5h.428L.066 9.192a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.514 3.514 0 0 0 .686.45A4.492 4.492 0 0 0 3 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 0 0 .686-.45l.045-.04l.016-.015l.006-.006l.002-.002l.001-.002L5.25 9.5l.53.53a.75.75 0 0 0 .154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 0 1 .124-.033h.984V13h-2.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-2.5V3.5h.984a.25.25 0 0 1 .124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.517 3.517 0 0 0 .686.45A4.492 4.492 0 0 0 13 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 0 0 .686-.45l.045-.04l.01-.01l.006-.005l.006-.006l.002-.002l.001-.002l-.529-.531l.53.53a.75.75 0 0 0 .154-.838L13.823 4.5h.427a.75.75 0 0 0 0-1.5h-2.234a.25.25 0 0 1-.124-.033l-1.29-.736A1.75 1.75 0 0 0 9.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"
+                      fill="#626262" /></svg> MIT License</div>
+                  <div class="time-stamp">Updated <span class="time-amount">3</span><span class="time-duration"> hours </span>ago</div>
+                </div>
+              </div>
+              <!-- ====== -->
+              <div class="repo-stars-btn-container">
+                <button class="repo-stars">
+                  <svg class="star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815l4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97l.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45l2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084l2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456l-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183l-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694v.001z"
+                      fill="#626262" /></svg> Star</button>
+              </div>
+            </div>
+<!-- end of individual repo details -->
+            <!-- individual repo details container -->
+            <div class="individual-repo-details-container">
+              <div class="repo-name-language-time-stamp-container">
+                <a href="#" class="repo-name">grapql-githubDashboard</a>
+                <div class="language-used-license-applied-time-stamp-container">
+                  <div class="language-used">
+                    <div class="language-color"></div> CSS
+                  </div>
+                  <div class="license-applied">
+                    <svg class="law-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8.75.75a.75.75 0 0 0-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 0 1 3.984 3H1.75a.75.75 0 0 0 0 1.5h.428L.066 9.192a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.514 3.514 0 0 0 .686.45A4.492 4.492 0 0 0 3 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 0 0 .686-.45l.045-.04l.016-.015l.006-.006l.002-.002l.001-.002L5.25 9.5l.53.53a.75.75 0 0 0 .154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 0 1 .124-.033h.984V13h-2.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-2.5V3.5h.984a.25.25 0 0 1 .124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.517 3.517 0 0 0 .686.45A4.492 4.492 0 0 0 13 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 0 0 .686-.45l.045-.04l.01-.01l.006-.005l.006-.006l.002-.002l.001-.002l-.529-.531l.53.53a.75.75 0 0 0 .154-.838L13.823 4.5h.427a.75.75 0 0 0 0-1.5h-2.234a.25.25 0 0 1-.124-.033l-1.29-.736A1.75 1.75 0 0 0 9.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"
+                      fill="#626262" /></svg> MIT License</div>
+                  <div class="time-stamp">Updated <span class="time-amount">3</span><span class="time-duration"> hours </span>ago</div>
+                </div>
+              </div>
+              <!-- ====== -->
+              <div class="repo-stars-btn-container">
+                <button class="repo-stars">
+                  <svg class="star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815l4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97l.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45l2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084l2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456l-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183l-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694v.001z"
+                      fill="#626262" /></svg> Star</button>
+              </div>
+            </div>
+<!-- end of individual repo details -->
+            <!-- individual repo details container -->
+            <div class="individual-repo-details-container">
+              <div class="repo-name-language-time-stamp-container">
+                <a href="#" class="repo-name">grapql-githubDashboard</a>
+                <div class="language-used-license-applied-time-stamp-container">
+                  <div class="language-used">
+                    <div class="language-color"></div> CSS
+                  </div>
+                  <div class="license-applied">
+                    <svg class="law-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8.75.75a.75.75 0 0 0-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 0 1 3.984 3H1.75a.75.75 0 0 0 0 1.5h.428L.066 9.192a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.514 3.514 0 0 0 .686.45A4.492 4.492 0 0 0 3 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 0 0 .686-.45l.045-.04l.016-.015l.006-.006l.002-.002l.001-.002L5.25 9.5l.53.53a.75.75 0 0 0 .154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 0 1 .124-.033h.984V13h-2.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-2.5V3.5h.984a.25.25 0 0 1 .124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.517 3.517 0 0 0 .686.45A4.492 4.492 0 0 0 13 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 0 0 .686-.45l.045-.04l.01-.01l.006-.005l.006-.006l.002-.002l.001-.002l-.529-.531l.53.53a.75.75 0 0 0 .154-.838L13.823 4.5h.427a.75.75 0 0 0 0-1.5h-2.234a.25.25 0 0 1-.124-.033l-1.29-.736A1.75 1.75 0 0 0 9.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"
+                      fill="#626262" /></svg> MIT License</div>
+                  <div class="time-stamp">Updated <span class="time-amount">3</span><span class="time-duration"> hours </span>ago</div>
+                </div>
+              </div>
+              <!-- ====== -->
+              <div class="repo-stars-btn-container">
+                <button class="repo-stars">
+                  <svg class="star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815l4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97l.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45l2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084l2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456l-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183l-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694v.001z"
+                      fill="#626262" /></svg> Star</button>
+              </div>
+            </div>
+<!-- end of individual repo details -->
+            <!-- individual repo details container -->
+            <div class="individual-repo-details-container">
+              <div class="repo-name-language-time-stamp-container">
+                <a href="#" class="repo-name">grapql-githubDashboard</a>
+                <div class="language-used-license-applied-time-stamp-container">
+                  <div class="language-used">
+                    <div class="language-color"></div> CSS
+                  </div>
+                  <div class="license-applied">
+                    <svg class="law-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8.75.75a.75.75 0 0 0-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 0 1 3.984 3H1.75a.75.75 0 0 0 0 1.5h.428L.066 9.192a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.514 3.514 0 0 0 .686.45A4.492 4.492 0 0 0 3 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 0 0 .686-.45l.045-.04l.016-.015l.006-.006l.002-.002l.001-.002L5.25 9.5l.53.53a.75.75 0 0 0 .154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 0 1 .124-.033h.984V13h-2.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-2.5V3.5h.984a.25.25 0 0 1 .124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.517 3.517 0 0 0 .686.45A4.492 4.492 0 0 0 13 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 0 0 .686-.45l.045-.04l.01-.01l.006-.005l.006-.006l.002-.002l.001-.002l-.529-.531l.53.53a.75.75 0 0 0 .154-.838L13.823 4.5h.427a.75.75 0 0 0 0-1.5h-2.234a.25.25 0 0 1-.124-.033l-1.29-.736A1.75 1.75 0 0 0 9.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"
+                      fill="#626262" /></svg> MIT License</div>
+                  <div class="time-stamp">Updated <span class="time-amount">3</span><span class="time-duration"> hours </span>ago</div>
+                </div>
+              </div>
+              <!-- ====== -->
+              <div class="repo-stars-btn-container">
+                <button class="repo-stars">
+                  <svg class="star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815l4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97l.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45l2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084l2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456l-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183l-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694v.001z"
+                      fill="#626262" /></svg> Star</button>
+              </div>
+            </div>
+<!-- end of individual repo details -->
+            <!-- individual repo details container -->
+            <div class="individual-repo-details-container">
+              <div class="repo-name-language-time-stamp-container">
+                <a href="#" class="repo-name">grapql-githubDashboard</a>
+                <div class="language-used-license-applied-time-stamp-container">
+                  <div class="language-used">
+                    <div class="language-color"></div> CSS
+                  </div>
+                  <div class="license-applied">
+                    <svg class="law-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8.75.75a.75.75 0 0 0-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 0 1 3.984 3H1.75a.75.75 0 0 0 0 1.5h.428L.066 9.192a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.514 3.514 0 0 0 .686.45A4.492 4.492 0 0 0 3 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 0 0 .686-.45l.045-.04l.016-.015l.006-.006l.002-.002l.001-.002L5.25 9.5l.53.53a.75.75 0 0 0 .154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 0 1 .124-.033h.984V13h-2.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-2.5V3.5h.984a.25.25 0 0 1 .124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.517 3.517 0 0 0 .686.45A4.492 4.492 0 0 0 13 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 0 0 .686-.45l.045-.04l.01-.01l.006-.005l.006-.006l.002-.002l.001-.002l-.529-.531l.53.53a.75.75 0 0 0 .154-.838L13.823 4.5h.427a.75.75 0 0 0 0-1.5h-2.234a.25.25 0 0 1-.124-.033l-1.29-.736A1.75 1.75 0 0 0 9.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"
+                      fill="#626262" /></svg> MIT License</div>
+                  <div class="time-stamp">Updated <span class="time-amount">3</span><span class="time-duration"> hours </span>ago</div>
+                </div>
+              </div>
+              <!-- ====== -->
+              <div class="repo-stars-btn-container">
+                <button class="repo-stars">
+                  <svg class="star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815l4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97l.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45l2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084l2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456l-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183l-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694v.001z"
+                      fill="#626262" /></svg> Star</button>
+              </div>
+            </div>
+<!-- end of individual repo details -->
+            <!-- individual repo details container -->
+            <div class="individual-repo-details-container">
+              <div class="repo-name-language-time-stamp-container">
+                <a href="#" class="repo-name">grapql-githubDashboard</a>
+                <div class="language-used-license-applied-time-stamp-container">
+                  <div class="language-used">
+                    <div class="language-color"></div> CSS
+                  </div>
+                  <div class="license-applied">
+                    <svg class="law-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8.75.75a.75.75 0 0 0-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 0 1 3.984 3H1.75a.75.75 0 0 0 0 1.5h.428L.066 9.192a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.514 3.514 0 0 0 .686.45A4.492 4.492 0 0 0 3 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 0 0 .686-.45l.045-.04l.016-.015l.006-.006l.002-.002l.001-.002L5.25 9.5l.53.53a.75.75 0 0 0 .154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 0 1 .124-.033h.984V13h-2.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-2.5V3.5h.984a.25.25 0 0 1 .124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.517 3.517 0 0 0 .686.45A4.492 4.492 0 0 0 13 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 0 0 .686-.45l.045-.04l.01-.01l.006-.005l.006-.006l.002-.002l.001-.002l-.529-.531l.53.53a.75.75 0 0 0 .154-.838L13.823 4.5h.427a.75.75 0 0 0 0-1.5h-2.234a.25.25 0 0 1-.124-.033l-1.29-.736A1.75 1.75 0 0 0 9.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"
+                      fill="#626262" /></svg> MIT License</div>
+                  <div class="time-stamp">Updated <span class="time-amount">3</span><span class="time-duration"> hours </span>ago</div>
+                </div>
+              </div>
+              <!-- ====== -->
+              <div class="repo-stars-btn-container">
+                <button class="repo-stars">
+                  <svg class="star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815l4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97l.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45l2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084l2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456l-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183l-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694v.001z"
+                      fill="#626262" /></svg> Star</button>
+              </div>
+            </div>
+<!-- end of individual repo details -->
+            <!-- individual repo details container -->
+            <div class="individual-repo-details-container">
+              <div class="repo-name-language-time-stamp-container">
+                <a href="#" class="repo-name">grapql-githubDashboard</a>
+                <div class="language-used-license-applied-time-stamp-container">
+                  <div class="language-used">
+                    <div class="language-color"></div> CSS
+                  </div>
+                  <div class="license-applied">
+                    <svg class="law-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8.75.75a.75.75 0 0 0-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 0 1 3.984 3H1.75a.75.75 0 0 0 0 1.5h.428L.066 9.192a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.514 3.514 0 0 0 .686.45A4.492 4.492 0 0 0 3 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 0 0 .686-.45l.045-.04l.016-.015l.006-.006l.002-.002l.001-.002L5.25 9.5l.53.53a.75.75 0 0 0 .154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 0 1 .124-.033h.984V13h-2.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-2.5V3.5h.984a.25.25 0 0 1 .124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.517 3.517 0 0 0 .686.45A4.492 4.492 0 0 0 13 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 0 0 .686-.45l.045-.04l.01-.01l.006-.005l.006-.006l.002-.002l.001-.002l-.529-.531l.53.53a.75.75 0 0 0 .154-.838L13.823 4.5h.427a.75.75 0 0 0 0-1.5h-2.234a.25.25 0 0 1-.124-.033l-1.29-.736A1.75 1.75 0 0 0 9.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"
+                      fill="#626262" /></svg> MIT License</div>
+                  <div class="time-stamp">Updated <span class="time-amount">3</span><span class="time-duration"> hours </span>ago</div>
+                </div>
+              </div>
+              <!-- ====== -->
+              <div class="repo-stars-btn-container">
+                <button class="repo-stars">
+                  <svg class="star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815l4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97l.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45l2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084l2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456l-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183l-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694v.001z"
+                      fill="#626262" /></svg> Star</button>
+              </div>
+            </div>
+<!-- end of individual repo details -->
+            <!-- individual repo details container -->
+            <div class="individual-repo-details-container">
+              <div class="repo-name-language-time-stamp-container">
+                <a href="#" class="repo-name">grapql-githubDashboard</a>
+                <div class="language-used-license-applied-time-stamp-container">
+                  <div class="language-used">
+                    <div class="language-color"></div> CSS
+                  </div>
+                  <div class="license-applied">
+                    <svg class="law-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8.75.75a.75.75 0 0 0-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 0 1 3.984 3H1.75a.75.75 0 0 0 0 1.5h.428L.066 9.192a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.514 3.514 0 0 0 .686.45A4.492 4.492 0 0 0 3 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 0 0 .686-.45l.045-.04l.016-.015l.006-.006l.002-.002l.001-.002L5.25 9.5l.53.53a.75.75 0 0 0 .154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 0 1 .124-.033h.984V13h-2.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-2.5V3.5h.984a.25.25 0 0 1 .124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.517 3.517 0 0 0 .686.45A4.492 4.492 0 0 0 13 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 0 0 .686-.45l.045-.04l.01-.01l.006-.005l.006-.006l.002-.002l.001-.002l-.529-.531l.53.53a.75.75 0 0 0 .154-.838L13.823 4.5h.427a.75.75 0 0 0 0-1.5h-2.234a.25.25 0 0 1-.124-.033l-1.29-.736A1.75 1.75 0 0 0 9.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"
+                      fill="#626262" /></svg> MIT License</div>
+                  <div class="time-stamp">Updated <span class="time-amount">3</span><span class="time-duration"> hours </span>ago</div>
+                </div>
+              </div>
+              <!-- ====== -->
+              <div class="repo-stars-btn-container">
+                <button class="repo-stars">
+                  <svg class="star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815l4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97l.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45l2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084l2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456l-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183l-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694v.001z"
+                      fill="#626262" /></svg> Star</button>
+              </div>
+            </div>
+<!-- end of individual repo details -->
+            <!-- individual repo details container -->
+            <div class="individual-repo-details-container">
+              <div class="repo-name-language-time-stamp-container">
+                <a href="#" class="repo-name">grapql-githubDashboard</a>
+                <div class="language-used-license-applied-time-stamp-container">
+                  <div class="language-used">
+                    <div class="language-color"></div> CSS
+                  </div>
+                  <div class="license-applied">
+                    <svg class="law-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8.75.75a.75.75 0 0 0-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 0 1 3.984 3H1.75a.75.75 0 0 0 0 1.5h.428L.066 9.192a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.514 3.514 0 0 0 .686.45A4.492 4.492 0 0 0 3 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 0 0 .686-.45l.045-.04l.016-.015l.006-.006l.002-.002l.001-.002L5.25 9.5l.53.53a.75.75 0 0 0 .154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 0 1 .124-.033h.984V13h-2.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-2.5V3.5h.984a.25.25 0 0 1 .124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.517 3.517 0 0 0 .686.45A4.492 4.492 0 0 0 13 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 0 0 .686-.45l.045-.04l.01-.01l.006-.005l.006-.006l.002-.002l.001-.002l-.529-.531l.53.53a.75.75 0 0 0 .154-.838L13.823 4.5h.427a.75.75 0 0 0 0-1.5h-2.234a.25.25 0 0 1-.124-.033l-1.29-.736A1.75 1.75 0 0 0 9.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"
+                      fill="#626262" /></svg> MIT License</div>
+                  <div class="time-stamp">Updated <span class="time-amount">3</span><span class="time-duration"> hours </span>ago</div>
+                </div>
+              </div>
+              <!-- ====== -->
+              <div class="repo-stars-btn-container">
+                <button class="repo-stars">
+                  <svg class="star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815l4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97l.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45l2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084l2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456l-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183l-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694v.001z"
+                      fill="#626262" /></svg> Star</button>
+              </div>
+            </div>
+<!-- end of individual repo details -->
+            <!-- individual repo details container -->
+            <div class="individual-repo-details-container">
+              <div class="repo-name-language-time-stamp-container">
+                <a href="#" class="repo-name">grapql-githubDashboard</a>
+                <div class="language-used-license-applied-time-stamp-container">
+                  <div class="language-used">
+                    <div class="language-color"></div> CSS
+                  </div>
+                  <div class="license-applied">
+                    <svg class="law-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8.75.75a.75.75 0 0 0-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 0 1 3.984 3H1.75a.75.75 0 0 0 0 1.5h.428L.066 9.192a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.514 3.514 0 0 0 .686.45A4.492 4.492 0 0 0 3 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 0 0 .686-.45l.045-.04l.016-.015l.006-.006l.002-.002l.001-.002L5.25 9.5l.53.53a.75.75 0 0 0 .154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 0 1 .124-.033h.984V13h-2.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-2.5V3.5h.984a.25.25 0 0 1 .124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.517 3.517 0 0 0 .686.45A4.492 4.492 0 0 0 13 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 0 0 .686-.45l.045-.04l.01-.01l.006-.005l.006-.006l.002-.002l.001-.002l-.529-.531l.53.53a.75.75 0 0 0 .154-.838L13.823 4.5h.427a.75.75 0 0 0 0-1.5h-2.234a.25.25 0 0 1-.124-.033l-1.29-.736A1.75 1.75 0 0 0 9.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"
+                      fill="#626262" /></svg> MIT License</div>
+                  <div class="time-stamp">Updated <span class="time-amount">3</span><span class="time-duration"> hours </span>ago</div>
+                </div>
+              </div>
+              <!-- ====== -->
+              <div class="repo-stars-btn-container">
+                <button class="repo-stars">
+                  <svg class="star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815l4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97l.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45l2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084l2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456l-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183l-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694v.001z"
+                      fill="#626262" /></svg> Star</button>
+              </div>
+            </div>
+<!-- end of individual repo details -->
+            <!-- individual repo details container -->
+            <div class="individual-repo-details-container">
+              <div class="repo-name-language-time-stamp-container">
+                <a href="#" class="repo-name">grapql-githubDashboard</a>
+                <div class="language-used-license-applied-time-stamp-container">
+                  <div class="language-used">
+                    <div class="language-color"></div> CSS
+                  </div>
+                  <div class="license-applied">
+                    <svg class="law-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8.75.75a.75.75 0 0 0-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 0 1 3.984 3H1.75a.75.75 0 0 0 0 1.5h.428L.066 9.192a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.514 3.514 0 0 0 .686.45A4.492 4.492 0 0 0 3 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 0 0 .686-.45l.045-.04l.016-.015l.006-.006l.002-.002l.001-.002L5.25 9.5l.53.53a.75.75 0 0 0 .154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 0 1 .124-.033h.984V13h-2.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-2.5V3.5h.984a.25.25 0 0 1 .124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.517 3.517 0 0 0 .686.45A4.492 4.492 0 0 0 13 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 0 0 .686-.45l.045-.04l.01-.01l.006-.005l.006-.006l.002-.002l.001-.002l-.529-.531l.53.53a.75.75 0 0 0 .154-.838L13.823 4.5h.427a.75.75 0 0 0 0-1.5h-2.234a.25.25 0 0 1-.124-.033l-1.29-.736A1.75 1.75 0 0 0 9.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"
+                      fill="#626262" /></svg> MIT License</div>
+                  <div class="time-stamp">Updated <span class="time-amount">3</span><span class="time-duration"> hours </span>ago</div>
+                </div>
+              </div>
+              <!-- ====== -->
+              <div class="repo-stars-btn-container">
+                <button class="repo-stars">
+                  <svg class="star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815l4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97l.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45l2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084l2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456l-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183l-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694v.001z"
+                      fill="#626262" /></svg> Star</button>
+              </div>
+            </div>
+<!-- end of individual repo details -->
+            <!-- individual repo details container -->
+            <div class="individual-repo-details-container">
+              <div class="repo-name-language-time-stamp-container">
+                <a href="#" class="repo-name">grapql-githubDashboard</a>
+                <div class="language-used-license-applied-time-stamp-container">
+                  <div class="language-used">
+                    <div class="language-color"></div> CSS
+                  </div>
+                  <div class="license-applied">
+                    <svg class="law-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8.75.75a.75.75 0 0 0-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 0 1 3.984 3H1.75a.75.75 0 0 0 0 1.5h.428L.066 9.192a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.514 3.514 0 0 0 .686.45A4.492 4.492 0 0 0 3 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 0 0 .686-.45l.045-.04l.016-.015l.006-.006l.002-.002l.001-.002L5.25 9.5l.53.53a.75.75 0 0 0 .154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 0 1 .124-.033h.984V13h-2.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-2.5V3.5h.984a.25.25 0 0 1 .124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.517 3.517 0 0 0 .686.45A4.492 4.492 0 0 0 13 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 0 0 .686-.45l.045-.04l.01-.01l.006-.005l.006-.006l.002-.002l.001-.002l-.529-.531l.53.53a.75.75 0 0 0 .154-.838L13.823 4.5h.427a.75.75 0 0 0 0-1.5h-2.234a.25.25 0 0 1-.124-.033l-1.29-.736A1.75 1.75 0 0 0 9.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"
+                      fill="#626262" /></svg> MIT License</div>
+                  <div class="time-stamp">Updated <span class="time-amount">3</span><span class="time-duration"> hours </span>ago</div>
+                </div>
+              </div>
+              <!-- ====== -->
+              <div class="repo-stars-btn-container">
+                <button class="repo-stars">
+                  <svg class="star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815l4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97l.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45l2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084l2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456l-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183l-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694v.001z"
+                      fill="#626262" /></svg> Star</button>
+              </div>
+            </div>
+<!-- end of individual repo details -->
+            <!-- individual repo details container -->
+            <div class="individual-repo-details-container">
+              <div class="repo-name-language-time-stamp-container">
+                <a href="#" class="repo-name">grapql-githubDashboard</a>
+                <div class="language-used-license-applied-time-stamp-container">
+                  <div class="language-used">
+                    <div class="language-color"></div> CSS
+                  </div>
+                  <div class="license-applied">
+                    <svg class="law-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8.75.75a.75.75 0 0 0-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 0 1 3.984 3H1.75a.75.75 0 0 0 0 1.5h.428L.066 9.192a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.514 3.514 0 0 0 .686.45A4.492 4.492 0 0 0 3 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 0 0 .686-.45l.045-.04l.016-.015l.006-.006l.002-.002l.001-.002L5.25 9.5l.53.53a.75.75 0 0 0 .154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 0 1 .124-.033h.984V13h-2.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-2.5V3.5h.984a.25.25 0 0 1 .124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.517 3.517 0 0 0 .686.45A4.492 4.492 0 0 0 13 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 0 0 .686-.45l.045-.04l.01-.01l.006-.005l.006-.006l.002-.002l.001-.002l-.529-.531l.53.53a.75.75 0 0 0 .154-.838L13.823 4.5h.427a.75.75 0 0 0 0-1.5h-2.234a.25.25 0 0 1-.124-.033l-1.29-.736A1.75 1.75 0 0 0 9.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"
+                      fill="#626262" /></svg> MIT License</div>
+                  <div class="time-stamp">Updated <span class="time-amount">3</span><span class="time-duration"> hours </span>ago</div>
+                </div>
+              </div>
+              <!-- ====== -->
+              <div class="repo-stars-btn-container">
+                <button class="repo-stars">
+                  <svg class="star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815l4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97l.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45l2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084l2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456l-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183l-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694v.001z"
+                      fill="#626262" /></svg> Star</button>
+              </div>
+            </div>
+<!-- end of individual repo details -->
+            <!-- individual repo details container -->
+            <div class="individual-repo-details-container">
+              <div class="repo-name-language-time-stamp-container">
+                <a href="#" class="repo-name">grapql-githubDashboard</a>
+                <div class="language-used-license-applied-time-stamp-container">
+                  <div class="language-used">
+                    <div class="language-color"></div> CSS
+                  </div>
+                  <div class="license-applied">
+                    <svg class="law-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8.75.75a.75.75 0 0 0-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 0 1 3.984 3H1.75a.75.75 0 0 0 0 1.5h.428L.066 9.192a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.514 3.514 0 0 0 .686.45A4.492 4.492 0 0 0 3 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 0 0 .686-.45l.045-.04l.016-.015l.006-.006l.002-.002l.001-.002L5.25 9.5l.53.53a.75.75 0 0 0 .154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 0 1 .124-.033h.984V13h-2.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-2.5V3.5h.984a.25.25 0 0 1 .124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.517 3.517 0 0 0 .686.45A4.492 4.492 0 0 0 13 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 0 0 .686-.45l.045-.04l.01-.01l.006-.005l.006-.006l.002-.002l.001-.002l-.529-.531l.53.53a.75.75 0 0 0 .154-.838L13.823 4.5h.427a.75.75 0 0 0 0-1.5h-2.234a.25.25 0 0 1-.124-.033l-1.29-.736A1.75 1.75 0 0 0 9.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"
+                      fill="#626262" /></svg> MIT License</div>
+                  <div class="time-stamp">Updated <span class="time-amount">3</span><span class="time-duration"> hours </span>ago</div>
+                </div>
+              </div>
+              <!-- ====== -->
+              <div class="repo-stars-btn-container">
+                <button class="repo-stars">
+                  <svg class="star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815l4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97l.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45l2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084l2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456l-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183l-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694v.001z"
+                      fill="#626262" /></svg> Star</button>
+              </div>
+            </div>
+<!-- end of individual repo details -->
+            <!-- individual repo details container -->
+            <div class="individual-repo-details-container">
+              <div class="repo-name-language-time-stamp-container">
+                <a href="#" class="repo-name">grapql-githubDashboard</a>
+                <div class="language-used-license-applied-time-stamp-container">
+                  <div class="language-used">
+                    <div class="language-color"></div> CSS
+                  </div>
+                  <div class="license-applied">
+                    <svg class="law-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8.75.75a.75.75 0 0 0-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 0 1 3.984 3H1.75a.75.75 0 0 0 0 1.5h.428L.066 9.192a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.514 3.514 0 0 0 .686.45A4.492 4.492 0 0 0 3 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 0 0 .686-.45l.045-.04l.016-.015l.006-.006l.002-.002l.001-.002L5.25 9.5l.53.53a.75.75 0 0 0 .154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 0 1 .124-.033h.984V13h-2.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-2.5V3.5h.984a.25.25 0 0 1 .124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.517 3.517 0 0 0 .686.45A4.492 4.492 0 0 0 13 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 0 0 .686-.45l.045-.04l.01-.01l.006-.005l.006-.006l.002-.002l.001-.002l-.529-.531l.53.53a.75.75 0 0 0 .154-.838L13.823 4.5h.427a.75.75 0 0 0 0-1.5h-2.234a.25.25 0 0 1-.124-.033l-1.29-.736A1.75 1.75 0 0 0 9.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"
+                      fill="#626262" /></svg> MIT License</div>
+                  <div class="time-stamp">Updated <span class="time-amount">3</span><span class="time-duration"> hours </span>ago</div>
+                </div>
+              </div>
+              <!-- ====== -->
+              <div class="repo-stars-btn-container">
+                <button class="repo-stars">
+                  <svg class="star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815l4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97l.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45l2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084l2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456l-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183l-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694v.001z"
+                      fill="#626262" /></svg> Star</button>
+              </div>
+            </div>
+<!-- end of individual repo details -->
+            <!-- individual repo details container -->
+            <div class="individual-repo-details-container">
+              <div class="repo-name-language-time-stamp-container">
+                <a href="#" class="repo-name">grapql-githubDashboard</a>
+                <div class="language-used-license-applied-time-stamp-container">
+                  <div class="language-used">
+                    <div class="language-color"></div> CSS
+                  </div>
+                  <div class="license-applied">
+                    <svg class="law-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8.75.75a.75.75 0 0 0-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 0 1 3.984 3H1.75a.75.75 0 0 0 0 1.5h.428L.066 9.192a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.514 3.514 0 0 0 .686.45A4.492 4.492 0 0 0 3 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 0 0 .686-.45l.045-.04l.016-.015l.006-.006l.002-.002l.001-.002L5.25 9.5l.53.53a.75.75 0 0 0 .154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 0 1 .124-.033h.984V13h-2.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-2.5V3.5h.984a.25.25 0 0 1 .124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.517 3.517 0 0 0 .686.45A4.492 4.492 0 0 0 13 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 0 0 .686-.45l.045-.04l.01-.01l.006-.005l.006-.006l.002-.002l.001-.002l-.529-.531l.53.53a.75.75 0 0 0 .154-.838L13.823 4.5h.427a.75.75 0 0 0 0-1.5h-2.234a.25.25 0 0 1-.124-.033l-1.29-.736A1.75 1.75 0 0 0 9.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"
+                      fill="#626262" /></svg> MIT License</div>
+                  <div class="time-stamp">Updated <span class="time-amount">3</span><span class="time-duration"> hours </span>ago</div>
+                </div>
+              </div>
+              <!-- ====== -->
+              <div class="repo-stars-btn-container">
+                <button class="repo-stars">
+                  <svg class="star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815l4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97l.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45l2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084l2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456l-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183l-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694v.001z"
+                      fill="#626262" /></svg> Star</button>
+              </div>
+            </div>
+<!-- end of individual repo details -->
+            <!-- individual repo details container -->
+            <div class="individual-repo-details-container">
+              <div class="repo-name-language-time-stamp-container">
+                <a href="#" class="repo-name">grapql-githubDashboard</a>
+                <div class="language-used-license-applied-time-stamp-container">
+                  <div class="language-used">
+                    <div class="language-color"></div> CSS
+                  </div>
+                  <div class="license-applied">
+                    <svg class="law-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8.75.75a.75.75 0 0 0-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 0 1 3.984 3H1.75a.75.75 0 0 0 0 1.5h.428L.066 9.192a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.514 3.514 0 0 0 .686.45A4.492 4.492 0 0 0 3 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 0 0 .686-.45l.045-.04l.016-.015l.006-.006l.002-.002l.001-.002L5.25 9.5l.53.53a.75.75 0 0 0 .154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 0 1 .124-.033h.984V13h-2.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-2.5V3.5h.984a.25.25 0 0 1 .124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.517 3.517 0 0 0 .686.45A4.492 4.492 0 0 0 13 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 0 0 .686-.45l.045-.04l.01-.01l.006-.005l.006-.006l.002-.002l.001-.002l-.529-.531l.53.53a.75.75 0 0 0 .154-.838L13.823 4.5h.427a.75.75 0 0 0 0-1.5h-2.234a.25.25 0 0 1-.124-.033l-1.29-.736A1.75 1.75 0 0 0 9.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"
+                      fill="#626262" /></svg> MIT License</div>
+                  <div class="time-stamp">Updated <span class="time-amount">3</span><span class="time-duration"> hours </span>ago</div>
+                </div>
+              </div>
+              <!-- ====== -->
+              <div class="repo-stars-btn-container">
+                <button class="repo-stars">
+                  <svg class="star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815l4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97l.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45l2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084l2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456l-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183l-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694v.001z"
+                      fill="#626262" /></svg> Star</button>
+              </div>
+            </div>
+<!-- end of individual repo details -->
+            <!-- individual repo details container -->
+            <div class="individual-repo-details-container">
+              <div class="repo-name-language-time-stamp-container">
+                <a href="#" class="repo-name">grapql-githubDashboard</a>
+                <div class="language-used-license-applied-time-stamp-container">
+                  <div class="language-used">
+                    <div class="language-color"></div> CSS
+                  </div>
+                  <div class="license-applied">
+                    <svg class="law-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8.75.75a.75.75 0 0 0-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 0 1 3.984 3H1.75a.75.75 0 0 0 0 1.5h.428L.066 9.192a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.514 3.514 0 0 0 .686.45A4.492 4.492 0 0 0 3 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 0 0 .686-.45l.045-.04l.016-.015l.006-.006l.002-.002l.001-.002L5.25 9.5l.53.53a.75.75 0 0 0 .154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 0 1 .124-.033h.984V13h-2.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-2.5V3.5h.984a.25.25 0 0 1 .124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.517 3.517 0 0 0 .686.45A4.492 4.492 0 0 0 13 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 0 0 .686-.45l.045-.04l.01-.01l.006-.005l.006-.006l.002-.002l.001-.002l-.529-.531l.53.53a.75.75 0 0 0 .154-.838L13.823 4.5h.427a.75.75 0 0 0 0-1.5h-2.234a.25.25 0 0 1-.124-.033l-1.29-.736A1.75 1.75 0 0 0 9.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"
+                      fill="#626262" /></svg> MIT License</div>
+                  <div class="time-stamp">Updated <span class="time-amount">3</span><span class="time-duration"> hours </span>ago</div>
+                </div>
+              </div>
+              <!-- ====== -->
+              <div class="repo-stars-btn-container">
+                <button class="repo-stars">
+                  <svg class="star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815l4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97l.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45l2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084l2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456l-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183l-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694v.001z"
+                      fill="#626262" /></svg> Star</button>
+              </div>
+            </div>
+<!-- end of individual repo details -->
+            <!-- individual repo details container -->
+            <div class="individual-repo-details-container">
+              <div class="repo-name-language-time-stamp-container">
+                <a href="#" class="repo-name">grapql-githubDashboard</a>
+                <div class="language-used-license-applied-time-stamp-container">
+                  <div class="language-used">
+                    <div class="language-color"></div> CSS
+                  </div>
+                  <div class="license-applied">
+                    <svg class="law-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
+                    width="1em" height="1em"
+                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8.75.75a.75.75 0 0 0-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 0 1 3.984 3H1.75a.75.75 0 0 0 0 1.5h.428L.066 9.192a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.514 3.514 0 0 0 .686.45A4.492 4.492 0 0 0 3 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 0 0 .686-.45l.045-.04l.016-.015l.006-.006l.002-.002l.001-.002L5.25 9.5l.53.53a.75.75 0 0 0 .154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 0 1 .124-.033h.984V13h-2.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-2.5V3.5h.984a.25.25 0 0 1 .124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 0 0 .154.838l.53-.53l-.53.53v.001l.002.002l.002.002l.006.006l.016.015l.045.04a3.517 3.517 0 0 0 .686.45A4.492 4.492 0 0 0 13 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 0 0 .686-.45l.045-.04l.01-.01l.006-.005l.006-.006l.002-.002l.001-.002l-.529-.531l.53.53a.75.75 0 0 0 .154-.838L13.823 4.5h.427a.75.75 0 0 0 0-1.5h-2.234a.25.25 0 0 1-.124-.033l-1.29-.736A1.75 1.75 0 0 0 9.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"
+                      fill="#626262" /></svg> MIT License</div>
+                  <div class="time-stamp">Updated <span class="time-amount">3</span><span class="time-duration"> hours </span>ago</div>
+                </div>
+              </div>
+              <!-- ====== -->
+              <div class="repo-stars-btn-container">
+                <button class="repo-stars">
+                  <svg class="star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
                     width="1em" height="1em"
                     style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
                     preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
@@ -274,34 +887,36 @@
         </div>
         <!-- end of repo list page btn -->
 
+    </div>
+<!-- end of container -->
         <!-- footer  -->
         <section class="footer">
           <div class="footer-logo-container">
-              <span class="iconify logo" data-icon="octicon:mark-github-16" data-inline="false"></span>
+            <span class="iconify logo" data-icon="octicon:mark-github-16" data-inline="false"></span>
           </div>
           <div class="important-links-container">
             <div class="copyright-container">
               <span class="copy">&COPY;</span>2020 GitHub, Inc.
             </div>
             <div class="links-container-footer">
-              <a class="important-link">Terms</a>
-              <a class="important-link">Privacy</a>
-              <a class="important-link">Security</a>
-              <a class="important-link">Status</a>
-              <a class="important-link">Help</a>
-              <a class="important-link">Contact GitHub</a>
-              <a class="important-link">Pricing</a>
-              <a class="important-link">API</a>
-              <a class="important-link">Training</a>
-              <a class="important-link">Blog</a>
-              <a class="important-link">About</a>
-              <a class="important-link"></a>
+              <a href="#" class="important-link">Terms</a>
+              <a href="#" class="important-link">Privacy</a>
+              <a href="#" class="important-link">Security</a>
+              <a href="#" class="important-link">Status</a>
+              <a href="#" class="important-link">Help</a>
+              <a href="#" class="important-link">Contact GitHub</a>
+              <a href="#" class="important-link">Pricing</a>
+              <a href="#" class="important-link">API</a>
+              <a href="#" class="important-link">Training</a>
+              <a href="#" class="important-link">Blog</a>
+              <a href="#" class="important-link">About</a>
+              <a href="#" class="important-link"></a>
             </div>
           </div>
         </section>
         <!-- end of footer -->
-    </div>
-<!-- end of container -->
+
+
     <script src="app.js"></script>
   </body>
 </html>
