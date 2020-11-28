@@ -54,11 +54,27 @@ navSlide();
 //     tabsNav.classList.remove("sticky");
 //   }
 // }
+var screenwidth =  screen.width;
+if(screen.width > 768){
+  window.addEventListener("scroll", () => {
+    let tabsNav = document.querySelector(".tabs-navigation-bar");
+    let tabsOffsetTop = tabsNav.offsetTop;
+    tabsNav.classList.toggle("sticky", window.pageYOffset > tabsOffsetTop);
+  });
+}
+else{
+  window.onscroll = function(){navigationTabs()};
+  var tabsNav = document.querySelector(".tabs-navigation-bar");
+  var sticky = tabsNav.offsetTop;
 
-window.addEventListener("scroll",()=>{
-  let tabsNav = document.querySelector(".tabs-navigation-bar");
-  let tabsOffsetTop = tabsNav.offsetTop;
-  tabsNav.classList.toggle("sticky",window.scrollY > tabsOffsetTop)});
+  function navigationTabs(){
+    if(window.pageYOffset >= sticky){
+      tabsNav.classList.add("sticky");
+    }else{
+      tabsNav.classList.remove("sticky");
+    }
+  }
+}
 
 
 let repoStarBtn = document.querySelector(".repo-stars");
@@ -85,4 +101,6 @@ repoStarBtn.addEventListener("click",()=>{
     repoStarBtn.innerHTML = `${cleanStar}Star`;
   }
 
-})
+});
+
+

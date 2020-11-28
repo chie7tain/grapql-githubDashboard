@@ -460,10 +460,10 @@
     transition: .7s all linear;
     z-index:3;
   }
-  .sticky + .main-view{
+  /* .sticky + .main-view{
     padding-top: 60px;
     transition: 1s all ease-in-out;
-  }
+  } */
 
   /* end of styles for tabs nav bar */
   /* =========================== */

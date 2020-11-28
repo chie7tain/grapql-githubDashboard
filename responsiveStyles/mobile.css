@@ -413,13 +413,9 @@
     width:100%;
     background: var(--primaryWhite);
     transition: .5s all ease-in;
-    /* padding-top:10px; */
     z-index:3;
   }
-  /* .sticky + .tabs-content-view {
-    padding-top:60px;
-    transition: 5s all ease-in;
-  } */
+
 
   /* end of style for the sticky tabs navigation */
   /* end of styles for tabs */
@@ -823,7 +819,6 @@
     grid-area:userProfile;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    /* grid-template-rows: 1fr ; */
     column-gap:10px;
     grid-template-areas:
           "userAvatar userDetails userDetails"
