@@ -55,7 +55,7 @@ navSlide();
 //   }
 // }
 var screenwidth =  screen.width;
-if(screen.width > 768){
+if(screen.width >= 768){
   window.addEventListener("scroll", () => {
     let tabsNav = document.querySelector(".tabs-navigation-bar");
     let tabsOffsetTop = tabsNav.offsetTop;
